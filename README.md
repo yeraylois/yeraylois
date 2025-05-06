@@ -19,7 +19,6 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="CSS3 logo" />
   <img width="12" />
-  <span title="Assembly language">⚙️</span>
 </div>
 
 ###
@@ -31,7 +30,7 @@
 - 🖥️ Full-stack experience with Angular, Java/Kotlin, and Python  
 - 🧠 Solid background in algorithms and systems performance  
 - 🏆 **Hack UDC 2025** Gradiant Challenge contributor – *SolutionHub* idea  
-- 🚀 **HackUPC 2024** participant – built the [SkyBuddies](https://github.com/DiegoRS05/SkyBuddies) app with the team
+- 🚀 **HackUPC 2025** participant – built the [SkyBuddies](https://github.com/DiegoRS05/SkyBuddies) app with the team
 
 ###
 
