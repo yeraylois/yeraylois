@@ -6,10 +6,12 @@
     <img src="https://img.shields.io/github/followers/yeraylois?label=Follow&style=social" alt="GitHub followers"/>
   </a>
   <img src="https://img.shields.io/badge/Email-UDC-blue?logo=gmail&style=flat-square" alt="Email"/>
-  <a href="[https://linkedin.com/in/yeraylois](https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/)">
-    <img src="https://img.shields.io/badge/LinkedIn-yeraylois-0A66C2?logo=linkedin&style=flat-square" alt="LinkedIn"/>
-  </a>
-  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License"/>
+  <a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">
+  <img
+    src="https://img.shields.io/badge/LinkedIn-yeraylois-0A66C2?logo=linkedin&style=flat-square"
+    alt="LinkedIn"
+  />
+</a>
 </p>
 
 ---
@@ -74,7 +76,13 @@
 ## 📫 Get in Touch
 
 <p align="center">
-  <a href="mailto:yeray.lois@udc.es"><img src="https://img.shields.io/badge/Email-UDC-blue?logo=gmail&style=flat-square" alt="Email"/></a>
-  <a href="https://github.com/yeraylois"><img src="https://img.shields.io/badge/GitHub-yeraylois-181717?logo=github&style=flat-square" alt="GitHub"/></a>
-  <a href="[https://linkedin.com/in/yeraylois](https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/)"><img src="https://img.shields.io/badge/LinkedIn-yeraylois-0A66C2?logo=linkedin&style=flat-square" alt="LinkedIn"/></a>
+  <a href="mailto:yeray.lois@udc.es">
+    <img src="https://img.shields.io/badge/Email-UDC-blue?logo=gmail&style=flat-square" alt="Email"/>
+  </a>
+  <a href="https://github.com/yeraylois">
+    <img src="https://img.shields.io/badge/GitHub-yeraylois-181717?logo=github&style=flat-square" alt="GitHub"/>
+  </a>
+  <a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">
+    <img src="https://img.shields.io/badge/LinkedIn-yeraylois-0A66C2?logo=linkedin&style=flat-square" alt="LinkedIn"/>
+  </a>
 </p>
