@@ -7,8 +7,6 @@
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="30" alt="C logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/assembly/assembly-original.svg" height="30" alt="Assembly logo" />
-  <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="Python logo" />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="Java logo" />
@@ -20,17 +18,20 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="HTML5 logo" />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="CSS3 logo" />
+  <img width="12" />
+  <span title="Assembly language">⚙️</span>
 </div>
 
 ###
 
 ### 🔧 About me
 
-- 🎓 Currently studying Computer Engineering at UDC (Hardware & Computation mention)  
-- 🔬 Focused on Embedded Systems, Firmware Development and Real-Time Applications  
-- 🖥️ Also experienced in Web & Mobile Full-Stack projects using Angular, Java/Kotlin, and Python  
-- 💡 Hack UDC 2025 Gradiant Challenge collaborator – contributed to the winning idea "SolutionHub"  
-- 🧠 Strong background in algorithms, systems performance, and clean code practices
+- 🎓 Computer Engineering @ UDC – Hardware & Computation mention  
+- 🔬 Embedded systems, firmware, and low-level development in C and Assembly  
+- 🖥️ Full-stack experience with Angular, Java/Kotlin, and Python  
+- 🧠 Solid background in algorithms and systems performance  
+- 🏆 **Hack UDC 2025** Gradiant Challenge contributor – *SolutionHub* idea  
+- 🚀 **HackUPC 2024** participant – built the [SkyBuddies](https://github.com/DiegoRS05/SkyBuddies) app with the team
 
 ###
 
