@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/yeraylois/yeraylois/master/banner.svg" alt="Banner" width="100%"/>
-</p>
-
 <h1 align="center">Hi 👋, I'm Yeray Lois Sánchez</h1>
 <p align="center"><em>Computer Engineering Student @ UDC — <strong>Hardware & Computation</strong> specialization</em></p>
 
@@ -10,7 +6,7 @@
     <img src="https://img.shields.io/github/followers/yeraylois?label=Follow&style=social" alt="GitHub followers"/>
   </a>
   <img src="https://img.shields.io/badge/Email-UDC-blue?logo=gmail&style=flat-square" alt="Email"/>
-  <a href="https://linkedin.com/in/yeraylois">
+  <a href="[https://linkedin.com/in/yeraylois](https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/)">
     <img src="https://img.shields.io/badge/LinkedIn-yeraylois-0A66C2?logo=linkedin&style=flat-square" alt="LinkedIn"/>
   </a>
   <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License"/>
@@ -22,7 +18,6 @@
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40" title="C"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/assembly/assembly-original.svg" width="40" title="Assembly"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" title="Python"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" title="Java"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="40" title="Kotlin"/>
@@ -71,8 +66,8 @@
 | Project            | Description                                                      | Technologies                       | Link                                                                 |
 | ------------------ | ---------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------- |
 | **myTodoApp**      | Android To-Do list app with local SQLite persistence             | Kotlin, Android, SQLite            | [Repository](https://github.com/yeraylois/myTodoApp)                 |
-| **AII_2025_TT**    | Infrastructure automation using Ansible playbooks & Docker orchestration | Ansible, Docker                    | [Repository](https://github.com/yeraylois/AII_2025_TT)               |
-| **Embedded Systems TT** | General embedded-systems project on a microcontroller—firmware & real-time control | C, Microcontroller, Embedded C     | [Repository](https://github.com/yeraylois/SE/tree/TraballoTutelado-2) |
+| **Informatic Infraestructure Administration**    | Infrastructure automation using Ansible playbooks, devOps & Docker orchestration | Ansible, Docker, Python, Angular, Github Actions, Prometheus, Graphana                  | [Repository](https://github.com/yeraylois/AII_2025_TT)               |
+| **Embedded Systems** | General embedded-systems project on a microcontroller—firmware & real-time control | C, Microcontroller, Embedded C     | [Repository](https://github.com/yeraylois/SE/tree/TraballoTutelado-2) |
 
 ---
 
@@ -81,5 +76,5 @@
 <p align="center">
   <a href="mailto:yeray.lois@udc.es"><img src="https://img.shields.io/badge/Email-UDC-blue?logo=gmail&style=flat-square" alt="Email"/></a>
   <a href="https://github.com/yeraylois"><img src="https://img.shields.io/badge/GitHub-yeraylois-181717?logo=github&style=flat-square" alt="GitHub"/></a>
-  <a href="https://linkedin.com/in/yeraylois"><img src="https://img.shields.io/badge/LinkedIn-yeraylois-0A66C2?logo=linkedin&style=flat-square" alt="LinkedIn"/></a>
+  <a href="[https://linkedin.com/in/yeraylois](https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/)"><img src="https://img.shields.io/badge/LinkedIn-yeraylois-0A66C2?logo=linkedin&style=flat-square" alt="LinkedIn"/></a>
 </p>
