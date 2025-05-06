@@ -43,8 +43,8 @@
 ## 📊 GitHub Metrics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=yeraylois&show_icons=true&count_private=true&theme=dracula&hide_border=true" width="45%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=yeraylois&layout=compact&langs_count=6&theme=dracula&hide_border=true" width="45%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=yeraylois&show_icons=true&count_private=true&theme=dracula&hide_border=true" height="150""/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=yeraylois&layout=compact&langs_count=6&theme=dracula&hide_border=true" height="150""/>
 </p>
 
 ---
