@@ -69,7 +69,7 @@
 
 | Project            | Description                                                      | Technologies                       | Link                                                                 |
 | ------------------ | ---------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------- |
-| **myTodoApp**      | Android To-Do list app with local SQLite persistence             | Kotlin, Android, SQLite            | [Repository](https://github.com/yeraylois/myTodoApp)                 |
+| **myTodoApp**      | Android To-Do list app with local SQLite persistence             | Ionic, Android, SQLite            | [Repository](https://github.com/yeraylois/myTodoApp)                 |
 | **Informatic Infraestructure Administration**    | Infrastructure automation using Ansible playbooks, devOps & Docker orchestration | Ansible, Docker, Python, Angular, Github Actions, Prometheus, Graphana                  | [Repository](https://github.com/yeraylois/AII_2025_TT)               |
 | **Embedded Systems** | General embedded-systems project on a microcontroller—firmware & real-time control | C, Microcontroller, Embedded C     | [Repository](https://github.com/yeraylois/SE/tree/TraballoTutelado-2) |
 
