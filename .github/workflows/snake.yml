@@ -1,3 +1,13 @@
+#
+# /*************************************************************
+# *   PROJECT : YERAYLOIS GITHUB PROFILE                      *
+# *   FILE    : .github/workflows/snake.yml                   *
+# *   PURPOSE : GENERATE CONTRIBUTION SNAKE ANIMATION         *
+# *   AUTHOR  : Yeray Lois Sanchez                            *
+# *   EMAIL   : yeray.lois@udc.es                             *
+# *************************************************************/
+#
+
 name: Generate Snake Animation
 
 on:

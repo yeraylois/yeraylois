@@ -1,3 +1,13 @@
+#
+# /*************************************************************
+# *   PROJECT : YERAYLOIS GITHUB PROFILE                      *
+# *   FILE    : .github/workflows/metrics.yml                 *
+# *   PURPOSE : GENERATE SELF-HOSTED PROFILE METRICS          *
+# *   AUTHOR  : Yeray Lois Sanchez                            *
+# *   EMAIL   : yeray.lois@udc.es                             *
+# *************************************************************/
+#
+
 name: Generate Profile Metrics
 
 on:
@@ -35,11 +45,6 @@ jobs:
           config_twemoji: yes
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
 
       - name: Base metrics (dark)
         uses: lowlighter/metrics@latest
@@ -54,11 +59,6 @@ jobs:
           config_theme: dark
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
 
       - name: Languages metrics (light)
         uses: lowlighter/metrics@latest

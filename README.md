@@ -1,9 +1,19 @@
+<!--
+/*************************************************************
+ *   PROJECT : YERAYLOIS GITHUB PROFILE                      *
+ *   FILE    : README.md                                     *
+ *   PURPOSE : PUBLIC PROFILE OVERVIEW (ES/EN)               *
+ *   AUTHOR  : Yeray Lois Sanchez                            *
+ *   EMAIL   : yeray.lois@udc.es                             *
+ *************************************************************/
+-->
+
 <h1 align="center">Yeray Lois Sánchez</h1>
 <p align="center"><strong>Computer Engineering Graduate (2021-2025) @ UDC</strong> · Hardware & Computation</p>
 
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1400&center=true&vCenter=true&width=820&lines=Embedded+Systems+%C2%B7+Automation+%C2%B7+Full-Stack;Building+reliable+developer+tooling+with+focus+on+execution"
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1400&center=true&vCenter=true&width=860&lines=Embedded+Systems+%C2%B7+Automation+%C2%B7+Full-Stack;Building+reliable+developer+tooling+with+focus+on+execution"
     alt="Typing intro"
   />
 </p>
@@ -15,7 +25,7 @@
 </p>
 
 <p align="center">
-  <a href="#espanol"><strong>ESPAÑOL</strong></a> · <a href="#english-version"><strong>ENGLISH</strong></a>
+  <a href="#espanol"><strong>ESPAÑOL</strong></a> · <a href="#english"><strong>ENGLISH</strong></a>
 </p>
 
 ---
@@ -87,18 +97,33 @@ Graduado en Ingeniería Informática por la UDC (promoción 2021-2025), con foco
   <a href="https://github.com/yeraylois"><img src="https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
 </p>
 
-| CANAL | ENLACE | USO RECOMENDADO |
-|---|---|---|
-| Email | [yeray.lois@udc.es](mailto:yeray.lois@udc.es) | Contacto profesional y colaboraciones |
-| LinkedIn | [linkedin.com/in/yeray-lois-sánchez-6a4305363](https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/) | Networking y oportunidades profesionales |
-| GitHub | [github.com/yeraylois](https://github.com/yeraylois) | Código, proyectos y actividad técnica |
+<table align="center">
+  <tr>
+    <th>CANAL</th>
+    <th>ENLACE</th>
+    <th>USO RECOMENDADO</th>
+  </tr>
+  <tr>
+    <td><strong>Email</strong></td>
+    <td><a href="mailto:yeray.lois@udc.es">yeray.lois@udc.es</a></td>
+    <td>Contacto profesional y colaboraciones</td>
+  </tr>
+  <tr>
+    <td><strong>LinkedIn</strong></td>
+    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">yeraylois</a></td>
+    <td>Networking y oportunidades profesionales</td>
+  </tr>
+  <tr>
+    <td><strong>GitHub</strong></td>
+    <td><a href="https://github.com/yeraylois">@yeraylois</a></td>
+    <td>Código, proyectos y actividad técnica</td>
+  </tr>
+</table>
 
 ---
 
-<a id="english-version"></a>
-<details>
-  <summary><strong>ENGLISH VERSION (CLICK TO EXPAND)</strong></summary>
-  <br />
+<a id="english"></a>
+## ENGLISH
 
 ### ABOUT ME
 
@@ -106,7 +131,17 @@ Computer Engineering graduate from UDC (Class of 2021-2025), focused on embedded
 
 ### MAIN STACK
 
-C · Python · Java · Kotlin · Angular · Docker · Linux · Bash · Git
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="34" title="C"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="34" title="Python"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="34" title="Java"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="34" title="Kotlin"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" width="34" title="Angular"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="34" title="Docker"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="34" title="Linux"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="34" title="Bash"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="34" title="Git"/>
+</p>
 
 ### HIGHLIGHTS
 
@@ -130,12 +165,49 @@ C · Python · Java · Kotlin · Angular · Docker · Linux · Bash · Git
   </picture>
 </p>
 
+### CONTRIBUTION SNAKE
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yeraylois/yeraylois/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yeraylois/yeraylois/output/github-contribution-grid-snake.svg" />
+  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/yeraylois/yeraylois/output/github-contribution-grid-snake.svg" width="100%" />
+</picture>
+
+### FEATURED PROJECTS
+
+| PROJECT | DESCRIPTION | STACK | LINK |
+|---|---|---|---|
+| `myTodoApp` | Android task app with local persistence | Ionic, Android, SQLite | [Repo](https://github.com/yeraylois/myTodoApp) |
+| `AII_2025_TT` | Infrastructure automation and observability | Ansible, Docker, Python, Angular, GitHub Actions, Prometheus, Grafana | [Repo](https://github.com/yeraylois/AII_2025_TT) |
+| `SE` | Embedded systems and real-time control project | C, Microcontrollers | [Repo](https://github.com/yeraylois/SE/tree/TraballoTutelado-2) |
+
 ### CONTACT
 
-| CHANNEL | LINK |
-|---|---|
-| Email | [yeray.lois@udc.es](mailto:yeray.lois@udc.es) |
-| LinkedIn | [yeraylois](https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/) |
-| GitHub | [@yeraylois](https://github.com/yeraylois) |
+<p align="center">
+  <a href="mailto:yeray.lois@udc.es"><img src="https://img.shields.io/badge/EMAIL-CONTACT-FF6A00?style=for-the-badge&logo=gmail&logoColor=white" alt="Email contact" /></a>
+  <a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/"><img src="https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn contact" /></a>
+  <a href="https://github.com/yeraylois"><img src="https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
+</p>
 
-</details>
+<table align="center">
+  <tr>
+    <th>CHANNEL</th>
+    <th>LINK</th>
+    <th>BEST FOR</th>
+  </tr>
+  <tr>
+    <td><strong>Email</strong></td>
+    <td><a href="mailto:yeray.lois@udc.es">yeray.lois@udc.es</a></td>
+    <td>Professional contact and collaborations</td>
+  </tr>
+  <tr>
+    <td><strong>LinkedIn</strong></td>
+    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">yeraylois</a></td>
+    <td>Networking and opportunities</td>
+  </tr>
+  <tr>
+    <td><strong>GitHub</strong></td>
+    <td><a href="https://github.com/yeraylois">@yeraylois</a></td>
+    <td>Code, projects and technical activity</td>
+  </tr>
+</table>
