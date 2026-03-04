@@ -47,6 +47,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/spotlight/current.svg .github/spotlight/current.json
+          git rm -f --ignore-unmatch assets/spotlight/current.svg
+          git add assets/spotlight/current-dark.svg assets/spotlight/current-light.svg .github/spotlight/current.json
           git commit -m "chore(spotlight): rotate weekly project spotlight [skip ci]"
           git push
