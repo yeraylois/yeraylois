@@ -77,6 +77,9 @@ Soy estudiante de Ingeniería Informática en la UDC (itinerario de Hardware y C
 ---
 
 <a id="english"></a>
+<details>
+<summary><strong>ENGLISH (CLICK TO EXPAND)</strong></summary>
+
 ## English
 
 ### About me
@@ -110,3 +113,5 @@ C · Python · Java · Kotlin · Angular · Docker · Linux · Bash · Git
 - Email: [yeray.lois@udc.es](mailto:yeray.lois@udc.es)
 - LinkedIn: [yeraylois](https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/)
 - GitHub: [@yeraylois](https://github.com/yeraylois)
+
+</details>
