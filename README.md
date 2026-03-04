@@ -25,7 +25,12 @@
 </p>
 
 <p align="center">
-  <a href="#espanol"><strong>ESPAÑOL</strong></a> · <a href="#english"><strong>ENGLISH</strong></a>
+  <a href="#espanol">
+    <img src="https://img.shields.io/badge/IDIOMA-ESPA%C3%91OL-FF6A00?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Español" />
+  </a>
+  <a href="#english">
+    <img src="https://img.shields.io/badge/LANGUAGE-ENGLISH-0A66C2?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English" />
+  </a>
 </p>
 
 ---
