@@ -125,21 +125,21 @@ Graduado en Ingeniería Informática por la UDC (promoción 2021-2025), con foco
   </tr>
   <tr>
     <td><strong>Email</strong></td>
-    <td><a href="mailto:yeray.lois@udc.es">yeray.lois@udc.es</a></td>
-    <td>Colaboraciones</td>
-    <td><a href="mailto:yeray.lois@udc.es">✉️&nbsp;Escribir</a></td>
+    <td><a href="mailto:yeray.lois@udc.es">mailto:yeray.lois@udc.es</a></td>
+    <td>Contacto profesional y colaboraciones técnicas</td>
+    <td><a href="mailto:yeray.lois@udc.es">✉️&nbsp;Escribir ahora</a></td>
   </tr>
   <tr>
     <td><strong>LinkedIn</strong></td>
-    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">linkedin.com/in/yeraylois</a></td>
-    <td>Networking</td>
-    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">🔗&nbsp;Conectar</a></td>
+    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/</a></td>
+    <td>Networking, oportunidades y presencia profesional</td>
+    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">🔗&nbsp;Ver perfil</a></td>
   </tr>
   <tr>
     <td><strong>GitHub</strong></td>
-    <td><a href="https://github.com/yeraylois">github.com/yeraylois</a></td>
-    <td>Código público</td>
-    <td><a href="https://github.com/yeraylois">💻&nbsp;Ver perfil</a></td>
+    <td><a href="https://github.com/yeraylois">https://github.com/yeraylois</a></td>
+    <td>Código público, proyectos y actividad técnica</td>
+    <td><a href="https://github.com/yeraylois">💻&nbsp;Abrir perfil</a></td>
   </tr>
 </table>
 
@@ -240,20 +240,20 @@ Computer Engineering graduate from UDC (Class of 2021-2025), focused on embedded
   </tr>
   <tr>
     <td><strong>Email</strong></td>
-    <td><a href="mailto:yeray.lois@udc.es">yeray.lois@udc.es</a></td>
-    <td>Collaboration</td>
-    <td><a href="mailto:yeray.lois@udc.es">✉️&nbsp;Contact</a></td>
+    <td><a href="mailto:yeray.lois@udc.es">mailto:yeray.lois@udc.es</a></td>
+    <td>Professional contact and technical collaboration</td>
+    <td><a href="mailto:yeray.lois@udc.es">✉️&nbsp;Contact now</a></td>
   </tr>
   <tr>
     <td><strong>LinkedIn</strong></td>
-    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">linkedin.com/in/yeraylois</a></td>
-    <td>Networking</td>
-    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">🔗&nbsp;Connect</a></td>
+    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/</a></td>
+    <td>Networking, opportunities and professional profile</td>
+    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">🔗&nbsp;Open profile</a></td>
   </tr>
   <tr>
     <td><strong>GitHub</strong></td>
-    <td><a href="https://github.com/yeraylois">github.com/yeraylois</a></td>
-    <td>Public code</td>
-    <td><a href="https://github.com/yeraylois">💻&nbsp;View profile</a></td>
+    <td><a href="https://github.com/yeraylois">https://github.com/yeraylois</a></td>
+    <td>Public code, projects and technical activity</td>
+    <td><a href="https://github.com/yeraylois">💻&nbsp;Open profile</a></td>
   </tr>
 </table>
