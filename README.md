@@ -73,7 +73,11 @@ Graduado en Ingeniería Informática por la UDC (promoción 2021-2025), con foco
 ### PROJECT SPOTLIGHT SEMANAL
 
 <p align="center">
-  <img src="./assets/spotlight/current.svg" alt="Project Spotlight semanal" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light.svg" />
+    <img src="./assets/spotlight/current-dark.svg" alt="Project Spotlight semanal" width="100%" />
+  </picture>
 </p>
 
 ### SNAKE DE CONTRIBUCIONES
@@ -188,7 +192,11 @@ Computer Engineering graduate from UDC (Class of 2021-2025), focused on embedded
 ### WEEKLY PROJECT SPOTLIGHT
 
 <p align="center">
-  <img src="./assets/spotlight/current.svg" alt="Weekly project spotlight" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light.svg" />
+    <img src="./assets/spotlight/current-dark.svg" alt="Weekly project spotlight" width="100%" />
+  </picture>
 </p>
 
 ### CONTRIBUTION SNAKE
