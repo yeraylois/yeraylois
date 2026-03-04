@@ -75,11 +75,32 @@ Graduado en Ingeniería Informática por la UDC (promoción 2021-2025), con foco
 
 ### PROYECTOS DESTACADOS
 
-| PROYECTO | DESCRIPCIÓN | STACK | ENLACE |
-|---|---|---|---|
-| `myTodoApp` | App Android de tareas con persistencia local | Ionic, Android, SQLite | [📦 Repo](https://github.com/yeraylois/myTodoApp) |
-| `AII_2025_TT` | Automatización de infraestructura y observabilidad | Ansible, Docker, Python, Angular, GitHub Actions, Prometheus, Grafana | [📦 Repo](https://github.com/yeraylois/AII_2025_TT) |
-| `SE` | Proyecto de sistemas embebidos y control en tiempo real | C, Microcontroladores | [📦 Repo](https://github.com/yeraylois/SE/tree/TraballoTutelado-2) |
+<table align="center" width="100%">
+  <tr>
+    <th width="16%">PROYECTO</th>
+    <th width="42%">DESCRIPCIÓN</th>
+    <th width="24%">STACK</th>
+    <th width="18%">ENLACE</th>
+  </tr>
+  <tr>
+    <td><code>myTodoApp</code></td>
+    <td>App Android de tareas con persistencia local</td>
+    <td>Ionic, Android, SQLite</td>
+    <td><a href="https://github.com/yeraylois/myTodoApp">📦&nbsp;Repo</a></td>
+  </tr>
+  <tr>
+    <td><code>AII_2025_TT</code></td>
+    <td>Automatización de infraestructura y observabilidad</td>
+    <td>Ansible, Docker, Python, Angular, GitHub Actions, Prometheus, Grafana</td>
+    <td><a href="https://github.com/yeraylois/AII_2025_TT">📦&nbsp;Repo</a></td>
+  </tr>
+  <tr>
+    <td><code>SE</code></td>
+    <td>Proyecto de sistemas embebidos y control en tiempo real</td>
+    <td>C, Microcontroladores</td>
+    <td><a href="https://github.com/yeraylois/SE/tree/TraballoTutelado-2">📦&nbsp;Repo</a></td>
+  </tr>
+</table>
 
 ### CONTACTO
 
@@ -89,11 +110,11 @@ Graduado en Ingeniería Informática por la UDC (promoción 2021-2025), con foco
   <a href="https://github.com/yeraylois"><img src="https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
 </p>
 
-<table align="center">
+<table align="center" width="100%">
   <tr>
-    <th>CANAL</th>
-    <th>ENLACE</th>
-    <th>USO RECOMENDADO</th>
+    <th width="16%">CANAL</th>
+    <th width="42%">ENLACE</th>
+    <th width="42%">USO RECOMENDADO</th>
   </tr>
   <tr>
     <td><strong>Email</strong></td>
@@ -159,11 +180,32 @@ Computer Engineering graduate from UDC (Class of 2021-2025), focused on embedded
 
 ### FEATURED PROJECTS
 
-| PROJECT | DESCRIPTION | STACK | LINK |
-|---|---|---|---|
-| `myTodoApp` | Android task app with local persistence | Ionic, Android, SQLite | [📦 Repo](https://github.com/yeraylois/myTodoApp) |
-| `AII_2025_TT` | Infrastructure automation and observability | Ansible, Docker, Python, Angular, GitHub Actions, Prometheus, Grafana | [📦 Repo](https://github.com/yeraylois/AII_2025_TT) |
-| `SE` | Embedded systems and real-time control project | C, Microcontrollers | [📦 Repo](https://github.com/yeraylois/SE/tree/TraballoTutelado-2) |
+<table align="center" width="100%">
+  <tr>
+    <th width="16%">PROJECT</th>
+    <th width="42%">DESCRIPTION</th>
+    <th width="24%">STACK</th>
+    <th width="18%">LINK</th>
+  </tr>
+  <tr>
+    <td><code>myTodoApp</code></td>
+    <td>Android task app with local persistence</td>
+    <td>Ionic, Android, SQLite</td>
+    <td><a href="https://github.com/yeraylois/myTodoApp">📦&nbsp;Repo</a></td>
+  </tr>
+  <tr>
+    <td><code>AII_2025_TT</code></td>
+    <td>Infrastructure automation and observability</td>
+    <td>Ansible, Docker, Python, Angular, GitHub Actions, Prometheus, Grafana</td>
+    <td><a href="https://github.com/yeraylois/AII_2025_TT">📦&nbsp;Repo</a></td>
+  </tr>
+  <tr>
+    <td><code>SE</code></td>
+    <td>Embedded systems and real-time control project</td>
+    <td>C, Microcontrollers</td>
+    <td><a href="https://github.com/yeraylois/SE/tree/TraballoTutelado-2">📦&nbsp;Repo</a></td>
+  </tr>
+</table>
 
 ### CONTACT
 
@@ -173,11 +215,11 @@ Computer Engineering graduate from UDC (Class of 2021-2025), focused on embedded
   <a href="https://github.com/yeraylois"><img src="https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
 </p>
 
-<table align="center">
+<table align="center" width="100%">
   <tr>
-    <th>CHANNEL</th>
-    <th>LINK</th>
-    <th>BEST FOR</th>
+    <th width="16%">CHANNEL</th>
+    <th width="42%">LINK</th>
+    <th width="42%">BEST FOR</th>
   </tr>
   <tr>
     <td><strong>Email</strong></td>
