@@ -1,0 +1,52 @@
+#
+# /*************************************************************
+# *   PROJECT : YERAYLOIS GITHUB PROFILE                      *
+# *   FILE    : .github/workflows/spotlight.yml               *
+# *   PURPOSE : ROTATE WEEKLY PROJECT SPOTLIGHT CARD          *
+# *   AUTHOR  : Yeray Lois Sanchez                            *
+# *   EMAIL   : yeray.lois@udc.es                             *
+# *************************************************************/
+#
+
+name: Rotate Project Spotlight
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: project-spotlight
+  cancel-in-progress: true
+
+jobs:
+  spotlight:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate spotlight SVG
+        run: |
+          python .github/scripts/generate_spotlight.py
+
+      - name: Commit spotlight changes
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- assets/spotlight .github/spotlight/current.json; then
+            echo "No spotlight changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/spotlight/current.svg .github/spotlight/current.json
+          git commit -m "chore(spotlight): rotate weekly project spotlight [skip ci]"
+          git push

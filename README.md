@@ -65,6 +65,12 @@ Graduado en Ingeniería Informática por la UDC (promoción 2021-2025), con foco
   </picture>
 </p>
 
+### PROJECT SPOTLIGHT SEMANAL
+
+<p align="center">
+  <img src="./assets/spotlight/current.svg" alt="Project Spotlight semanal" width="100%" />
+</p>
+
 ### SNAKE DE CONTRIBUCIONES
 
 <picture>
@@ -75,7 +81,7 @@ Graduado en Ingeniería Informática por la UDC (promoción 2021-2025), con foco
 
 ### PROYECTOS DESTACADOS
 
-<table align="center" width="100%">
+<table align="center" width="98%">
   <tr>
     <th width="16%">PROYECTO</th>
     <th width="42%">DESCRIPCIÓN</th>
@@ -110,26 +116,30 @@ Graduado en Ingeniería Informática por la UDC (promoción 2021-2025), con foco
   <a href="https://github.com/yeraylois"><img src="https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
 </p>
 
-<table align="center" width="100%">
+<table align="center" width="98%">
   <tr>
     <th width="16%">CANAL</th>
     <th width="42%">ENLACE</th>
-    <th width="42%">USO RECOMENDADO</th>
+    <th width="24%">USO RECOMENDADO</th>
+    <th width="18%">ACCIÓN</th>
   </tr>
   <tr>
     <td><strong>Email</strong></td>
     <td><a href="mailto:yeray.lois@udc.es">yeray.lois@udc.es</a></td>
-    <td>Contacto profesional y colaboraciones</td>
+    <td>Colaboraciones</td>
+    <td><a href="mailto:yeray.lois@udc.es">✉️&nbsp;Escribir</a></td>
   </tr>
   <tr>
     <td><strong>LinkedIn</strong></td>
-    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">yeraylois</a></td>
-    <td>Networking y oportunidades profesionales</td>
+    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">linkedin.com/in/yeraylois</a></td>
+    <td>Networking</td>
+    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">🔗&nbsp;Conectar</a></td>
   </tr>
   <tr>
     <td><strong>GitHub</strong></td>
-    <td><a href="https://github.com/yeraylois">@yeraylois</a></td>
-    <td>Código, proyectos y actividad técnica</td>
+    <td><a href="https://github.com/yeraylois">github.com/yeraylois</a></td>
+    <td>Código público</td>
+    <td><a href="https://github.com/yeraylois">💻&nbsp;Ver perfil</a></td>
   </tr>
 </table>
 
@@ -170,6 +180,12 @@ Computer Engineering graduate from UDC (Class of 2021-2025), focused on embedded
   </picture>
 </p>
 
+### WEEKLY PROJECT SPOTLIGHT
+
+<p align="center">
+  <img src="./assets/spotlight/current.svg" alt="Weekly project spotlight" width="100%" />
+</p>
+
 ### CONTRIBUTION SNAKE
 
 <picture>
@@ -180,7 +196,7 @@ Computer Engineering graduate from UDC (Class of 2021-2025), focused on embedded
 
 ### FEATURED PROJECTS
 
-<table align="center" width="100%">
+<table align="center" width="98%">
   <tr>
     <th width="16%">PROJECT</th>
     <th width="42%">DESCRIPTION</th>
@@ -215,25 +231,29 @@ Computer Engineering graduate from UDC (Class of 2021-2025), focused on embedded
   <a href="https://github.com/yeraylois"><img src="https://img.shields.io/badge/GITHUB-PROFILE-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
 </p>
 
-<table align="center" width="100%">
+<table align="center" width="98%">
   <tr>
     <th width="16%">CHANNEL</th>
     <th width="42%">LINK</th>
-    <th width="42%">BEST FOR</th>
+    <th width="24%">BEST FOR</th>
+    <th width="18%">ACTION</th>
   </tr>
   <tr>
     <td><strong>Email</strong></td>
     <td><a href="mailto:yeray.lois@udc.es">yeray.lois@udc.es</a></td>
-    <td>Professional contact and collaborations</td>
+    <td>Collaboration</td>
+    <td><a href="mailto:yeray.lois@udc.es">✉️&nbsp;Contact</a></td>
   </tr>
   <tr>
     <td><strong>LinkedIn</strong></td>
-    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">yeraylois</a></td>
-    <td>Networking and opportunities</td>
+    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">linkedin.com/in/yeraylois</a></td>
+    <td>Networking</td>
+    <td><a href="https://www.linkedin.com/in/yeray-lois-sánchez-6a4305363/">🔗&nbsp;Connect</a></td>
   </tr>
   <tr>
     <td><strong>GitHub</strong></td>
-    <td><a href="https://github.com/yeraylois">@yeraylois</a></td>
-    <td>Code, projects and technical activity</td>
+    <td><a href="https://github.com/yeraylois">github.com/yeraylois</a></td>
+    <td>Public code</td>
+    <td><a href="https://github.com/yeraylois">💻&nbsp;View profile</a></td>
   </tr>
 </table>
