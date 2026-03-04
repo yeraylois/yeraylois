@@ -3,21 +3,36 @@
     "id": "mytodoapp",
     "name": "myTodoApp",
     "description": "Android to-do app with local SQLite persistence and offline-first flow.",
-    "stack": "Ionic · Android · SQLite",
+    "tech": [
+      { "id": "ionic", "label": "Ionic" },
+      { "id": "android", "label": "Android" },
+      { "id": "sqlite", "label": "SQLite" }
+    ],
     "repo": "https://github.com/yeraylois/myTodoApp"
   },
   {
     "id": "aii_2025_tt",
     "name": "AII_2025_TT",
     "description": "Infrastructure automation and observability stack with IaC and monitoring.",
-    "stack": "Ansible · Docker · Python · Angular · Prometheus · Grafana",
+    "tech": [
+      { "id": "ansible", "label": "Ansible" },
+      { "id": "docker", "label": "Docker" },
+      { "id": "python", "label": "Python" },
+      { "id": "angular", "label": "Angular" },
+      { "id": "prometheus", "label": "Prometheus" },
+      { "id": "grafana", "label": "Grafana" }
+    ],
     "repo": "https://github.com/yeraylois/AII_2025_TT"
   },
   {
     "id": "se_tt2",
     "name": "SE (TraballoTutelado-2)",
     "description": "Embedded systems project focused on firmware and real-time control.",
-    "stack": "C · Microcontrollers · Embedded Systems",
+    "tech": [
+      { "id": "c", "label": "C" },
+      { "id": "microchip", "label": "Microcontrollers" },
+      { "id": "embedded", "label": "Embedded Systems" }
+    ],
     "repo": "https://github.com/yeraylois/SE/tree/TraballoTutelado-2"
   }
 ]
