@@ -53,7 +53,6 @@ Graduado en Ingeniería Informática por la UDC (promoción 2021-2025), con foco
 
 ### DESTACADOS
 
-- Ganador de challenge en **Hack UDC 2025** con *SolutionHub*.
 - Participación en **HackUPC 2025** con [SkyBuddies](https://github.com/DiegoRS05/SkyBuddies).
 - Proyectos en firmware, automatización DevOps y desarrollo full-stack.
 
@@ -78,9 +77,9 @@ Graduado en Ingeniería Informática por la UDC (promoción 2021-2025), con foco
 
 | PROYECTO | DESCRIPCIÓN | STACK | ENLACE |
 |---|---|---|---|
-| `myTodoApp` | App Android de tareas con persistencia local | Ionic, Android, SQLite | [Repo](https://github.com/yeraylois/myTodoApp) |
-| `AII_2025_TT` | Automatización de infraestructura y observabilidad | Ansible, Docker, Python, Angular, GitHub Actions, Prometheus, Grafana | [Repo](https://github.com/yeraylois/AII_2025_TT) |
-| `SE` | Proyecto de sistemas embebidos y control en tiempo real | C, Microcontroladores | [Repo](https://github.com/yeraylois/SE/tree/TraballoTutelado-2) |
+| `myTodoApp` | App Android de tareas con persistencia local | Ionic, Android, SQLite | [📦 Repo](https://github.com/yeraylois/myTodoApp) |
+| `AII_2025_TT` | Automatización de infraestructura y observabilidad | Ansible, Docker, Python, Angular, GitHub Actions, Prometheus, Grafana | [📦 Repo](https://github.com/yeraylois/AII_2025_TT) |
+| `SE` | Proyecto de sistemas embebidos y control en tiempo real | C, Microcontroladores | [📦 Repo](https://github.com/yeraylois/SE/tree/TraballoTutelado-2) |
 
 ### CONTACTO
 
@@ -138,7 +137,6 @@ Computer Engineering graduate from UDC (Class of 2021-2025), focused on embedded
 
 ### HIGHLIGHTS
 
-- Challenge winner at **Hack UDC 2025** with *SolutionHub*.
 - **HackUPC 2025** participant with [SkyBuddies](https://github.com/DiegoRS05/SkyBuddies).
 - Projects across firmware, DevOps automation and full-stack development.
 
@@ -163,9 +161,9 @@ Computer Engineering graduate from UDC (Class of 2021-2025), focused on embedded
 
 | PROJECT | DESCRIPTION | STACK | LINK |
 |---|---|---|---|
-| `myTodoApp` | Android task app with local persistence | Ionic, Android, SQLite | [Repo](https://github.com/yeraylois/myTodoApp) |
-| `AII_2025_TT` | Infrastructure automation and observability | Ansible, Docker, Python, Angular, GitHub Actions, Prometheus, Grafana | [Repo](https://github.com/yeraylois/AII_2025_TT) |
-| `SE` | Embedded systems and real-time control project | C, Microcontrollers | [Repo](https://github.com/yeraylois/SE/tree/TraballoTutelado-2) |
+| `myTodoApp` | Android task app with local persistence | Ionic, Android, SQLite | [📦 Repo](https://github.com/yeraylois/myTodoApp) |
+| `AII_2025_TT` | Infrastructure automation and observability | Ansible, Docker, Python, Angular, GitHub Actions, Prometheus, Grafana | [📦 Repo](https://github.com/yeraylois/AII_2025_TT) |
+| `SE` | Embedded systems and real-time control project | C, Microcontrollers | [📦 Repo](https://github.com/yeraylois/SE/tree/TraballoTutelado-2) |
 
 ### CONTACT
 
