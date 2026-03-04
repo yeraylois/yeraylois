@@ -61,15 +61,8 @@ Graduado en Ingeniería Informática por la UDC (promoción 2021-2025), con foco
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/metrics/base.dark.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/metrics/base.svg" />
     <img src="./assets/metrics/base.svg" alt="GitHub metrics base" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/metrics/languages.dark.svg" />
-    <img src="./assets/metrics/languages.svg" alt="GitHub metrics languages" />
   </picture>
 </p>
 
@@ -153,15 +146,8 @@ Computer Engineering graduate from UDC (Class of 2021-2025), focused on embedded
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/metrics/base.dark.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/metrics/base.svg" />
     <img src="./assets/metrics/base.svg" alt="GitHub metrics base" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/metrics/languages.dark.svg" />
-    <img src="./assets/metrics/languages.svg" alt="GitHub metrics languages" />
   </picture>
 </p>
 
