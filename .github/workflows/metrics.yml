@@ -43,6 +43,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Madrid
           config_twemoji: yes
+          plugin_habits: no
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
@@ -56,7 +57,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Madrid
           config_twemoji: yes
-          config_theme: dark
+          plugin_habits: no
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
@@ -69,6 +70,7 @@ jobs:
           output_action: none
           base: ""
           config_timezone: Europe/Madrid
+          plugin_habits: no
           plugin_languages: yes
           plugin_languages_ignored: html, css
           plugin_languages_limit: 8
@@ -86,7 +88,7 @@ jobs:
           output_action: none
           base: ""
           config_timezone: Europe/Madrid
-          config_theme: dark
+          plugin_habits: no
           plugin_languages: yes
           plugin_languages_ignored: html, css
           plugin_languages_limit: 8
