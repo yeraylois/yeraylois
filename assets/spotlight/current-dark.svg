@@ -1,18 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="195" viewBox="0 0 840 195" role="img" aria-label="Project spotlight: myTodoApp">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="195" viewBox="0 0 840 195" role="img" aria-label="Project spotlight: AII_2025_TT">
   <defs>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#3880FF"/><stop offset="50%" stop-color="#3DDC84"/><stop offset="100%" stop-color="#0F80CC"/></linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#EE0000"/><stop offset="20%" stop-color="#2496ED"/><stop offset="40%" stop-color="#3572A5"/><stop offset="60%" stop-color="#DD0031"/><stop offset="80%" stop-color="#E6522C"/><stop offset="100%" stop-color="#F46800"/></linearGradient>
     <clipPath id="card"><rect width="840" height="195" rx="12"/></clipPath>
   </defs>
 
   <rect width="840" height="195" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
   <rect width="840" height="3" fill="url(#accent)" clip-path="url(#card)"/>
 
-  <text x="32" y="34" fill="#7d8590" font-size="11" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" letter-spacing="1">WEEK 10</text>
-  <text x="808" y="34" fill="#58a6ff" font-size="12" font-weight="400" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" text-anchor="end">yeraylois/myTodoApp</text>
+  <text x="32" y="34" fill="#7d8590" font-size="11" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" letter-spacing="1">WEEK 11</text>
+  <text x="808" y="34" fill="#58a6ff" font-size="12" font-weight="400" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" text-anchor="end">yeraylois/AII_2025_TT</text>
 
-  <text x="32" y="72" fill="#e6edf3" font-size="28" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">myTodoApp</text>
+  <text x="32" y="72" fill="#e6edf3" font-size="28" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">AII_2025_TT</text>
 
-  <text x="32" y="100" fill="#7d8590" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Android to-do app with local SQLite persistence and offline-first flow.</text>
+  <text x="32" y="100" fill="#7d8590" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Infrastructure automation and observability stack with IaC and monitoring.</text>
 
-  <circle cx="32" cy="159" r="5" fill="#3880FF"/><text x="45" y="163" fill="#e6edf3" font-size="12.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Ionic</text><circle cx="104" cy="159" r="5" fill="#3DDC84"/><text x="117" y="163" fill="#e6edf3" font-size="12.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Android</text><circle cx="191" cy="159" r="5" fill="#0F80CC"/><text x="204" y="163" fill="#e6edf3" font-size="12.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">SQLite</text>
+  <circle cx="32" cy="159" r="5" fill="#EE0000"/><text x="45" y="163" fill="#e6edf3" font-size="12.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Ansible</text><circle cx="119" cy="159" r="5" fill="#2496ED"/><text x="132" y="163" fill="#e6edf3" font-size="12.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Docker</text><circle cx="199" cy="159" r="5" fill="#3572A5"/><text x="212" y="163" fill="#e6edf3" font-size="12.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Python</text><circle cx="279" cy="159" r="5" fill="#DD0031"/><text x="292" y="163" fill="#e6edf3" font-size="12.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Angular</text><circle cx="366" cy="159" r="5" fill="#E6522C"/><text x="379" y="163" fill="#e6edf3" font-size="12.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Prometheus</text><circle cx="476" cy="159" r="5" fill="#F46800"/><text x="489" y="163" fill="#e6edf3" font-size="12.5" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Grafana</text>
 </svg>
