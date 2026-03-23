@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-03-16T05:24:55.667987+00:00",
-  "iso_week": 12,
-  "index": 2,
+  "generated_at": "2026-03-23T05:14:00.867026+00:00",
+  "iso_week": 13,
+  "index": 0,
   "project": {
-    "id": "se_tt2",
-    "name": "SE (TraballoTutelado-2)",
-    "description": "Embedded systems project focused on firmware and real-time control.",
+    "id": "mytodoapp",
+    "name": "myTodoApp",
+    "description": "Android to-do app with local SQLite persistence and offline-first flow.",
     "tech": [
       {
-        "id": "c",
-        "label": "C"
+        "id": "ionic",
+        "label": "Ionic"
       },
       {
-        "id": "microchip",
-        "label": "Microcontrollers"
+        "id": "android",
+        "label": "Android"
       },
       {
-        "id": "embedded",
-        "label": "Embedded Systems"
+        "id": "sqlite",
+        "label": "SQLite"
       }
     ],
-    "repo": "https://github.com/yeraylois/SE/tree/TraballoTutelado-2"
+    "repo": "https://github.com/yeraylois/myTodoApp"
   }
 }
