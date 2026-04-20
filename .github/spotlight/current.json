@@ -1,25 +1,37 @@
 {
-  "generated_at": "2026-04-13T05:49:03.960873+00:00",
-  "iso_week": 16,
-  "index": 0,
+  "generated_at": "2026-04-20T05:48:27.543305+00:00",
+  "iso_week": 17,
+  "index": 1,
   "project": {
-    "id": "mytodoapp",
-    "name": "myTodoApp",
-    "description": "Android to-do app with local SQLite persistence and offline-first flow.",
+    "id": "aii_2025_tt",
+    "name": "AII_2025_TT",
+    "description": "Infrastructure automation and observability stack with IaC and monitoring.",
     "tech": [
       {
-        "id": "ionic",
-        "label": "Ionic"
+        "id": "ansible",
+        "label": "Ansible"
       },
       {
-        "id": "android",
-        "label": "Android"
+        "id": "docker",
+        "label": "Docker"
       },
       {
-        "id": "sqlite",
-        "label": "SQLite"
+        "id": "python",
+        "label": "Python"
+      },
+      {
+        "id": "angular",
+        "label": "Angular"
+      },
+      {
+        "id": "prometheus",
+        "label": "Prometheus"
+      },
+      {
+        "id": "grafana",
+        "label": "Grafana"
       }
     ],
-    "repo": "https://github.com/yeraylois/myTodoApp"
+    "repo": "https://github.com/yeraylois/AII_2025_TT"
   }
 }
