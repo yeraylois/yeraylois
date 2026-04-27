@@ -1,37 +1,25 @@
 {
-  "generated_at": "2026-04-20T05:48:27.543305+00:00",
-  "iso_week": 17,
-  "index": 1,
+  "generated_at": "2026-04-27T06:09:15.988102+00:00",
+  "iso_week": 18,
+  "index": 2,
   "project": {
-    "id": "aii_2025_tt",
-    "name": "AII_2025_TT",
-    "description": "Infrastructure automation and observability stack with IaC and monitoring.",
+    "id": "se_tt2",
+    "name": "SE (TraballoTutelado-2)",
+    "description": "Embedded systems project focused on firmware and real-time control.",
     "tech": [
       {
-        "id": "ansible",
-        "label": "Ansible"
+        "id": "c",
+        "label": "C"
       },
       {
-        "id": "docker",
-        "label": "Docker"
+        "id": "microchip",
+        "label": "Microcontrollers"
       },
       {
-        "id": "python",
-        "label": "Python"
-      },
-      {
-        "id": "angular",
-        "label": "Angular"
-      },
-      {
-        "id": "prometheus",
-        "label": "Prometheus"
-      },
-      {
-        "id": "grafana",
-        "label": "Grafana"
+        "id": "embedded",
+        "label": "Embedded Systems"
       }
     ],
-    "repo": "https://github.com/yeraylois/AII_2025_TT"
+    "repo": "https://github.com/yeraylois/SE/tree/TraballoTutelado-2"
   }
 }
