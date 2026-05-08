@@ -115,6 +115,12 @@ Graduado en Ingeniería Informática por la UDC (promoción 2021-2025), con foco
     <td>C, Microcontroladores</td>
     <td><a href="https://github.com/yeraylois/SE/tree/TraballoTutelado-2">📦&nbsp;Repo</a></td>
   </tr>
+  <tr>
+    <td><code>Zephyr T114</code></td>
+    <td>Soporte de placa Heltec Mesh Node T114 en Zephyr RTOS (PR) + app validator interactivo para testear display, botones y hardware</td>
+    <td>C, Zephyr RTOS, Embedded Systems</td>
+    <td><a href="https://github.com/yeraylois/zephyr">📦&nbsp;Repo</a></td>
+  </tr>
 </table>
 
 ### CONTACTO
@@ -233,6 +239,12 @@ Computer Engineering graduate from UDC (Class of 2021-2025), focused on embedded
     <td>Embedded systems and real-time control project</td>
     <td>C, Microcontrollers</td>
     <td><a href="https://github.com/yeraylois/SE/tree/TraballoTutelado-2">📦&nbsp;Repo</a></td>
+  </tr>
+  <tr>
+    <td><code>Zephyr T114</code></td>
+    <td>Board support PR for Heltec Mesh Node T114 on Zephyr RTOS + interactive validator app to test display, buttons and hardware</td>
+    <td>C, Zephyr RTOS, Embedded Systems</td>
+    <td><a href="https://github.com/yeraylois/zephyr">📦&nbsp;Repo</a></td>
   </tr>
 </table>
 

@@ -34,5 +34,16 @@
       { "id": "embedded", "label": "Embedded Systems" }
     ],
     "repo": "https://github.com/yeraylois/SE/tree/TraballoTutelado-2"
+  },
+  {
+    "id": "zephyr_t114_validator",
+    "name": "Zephyr: Heltec Mesh Node T114 Board + Validator",
+    "description": "Board support PR for Heltec Mesh Node T114 (nRF52840 + LoRa + TFT) plus an interactive validator sample to test display, buttons and hardware.",
+    "tech": [
+      { "id": "c", "label": "C" },
+      { "id": "zephyr", "label": "Zephyr RTOS" },
+      { "id": "embedded", "label": "Embedded Systems" }
+    ],
+    "repo": "https://github.com/yeraylois/zephyr"
   }
 ]
