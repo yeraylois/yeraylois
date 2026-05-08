@@ -58,6 +58,7 @@ TECH_COLORS = {
     "c": "#555555",
     "microchip": "#A22846",
     "embedded": "#F5822A",
+    "zephyr": "#662d91",
 }
 
 
@@ -173,7 +174,14 @@ def main() -> None:
 
     week = dt.date.today().isocalendar().week
     manual = os.getenv("SPOTLIGHT_INDEX", "").strip()
-    if manual:
+    pinned_id = os.getenv("SPOTLIGHT_PINNED_ID", "").strip()
+
+    if pinned_id:
+        try:
+            index = next(i for i, p in enumerate(projects) if p.get("id") == pinned_id)
+        except StopIteration:
+            raise RuntimeError(f"Pinned project id not found: {pinned_id}")
+    elif manual:
         index = max(0, min(len(projects) - 1, int(manual)))
     else:
         index = (week - 1) % len(projects)

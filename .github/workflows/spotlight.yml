@@ -35,6 +35,8 @@ jobs:
           python-version: "3.x"
 
       - name: Generate spotlight SVG
+        env:
+          SPOTLIGHT_PINNED_ID: "zephyr_t114_validator"
         run: |
           python .github/scripts/generate_spotlight.py
 

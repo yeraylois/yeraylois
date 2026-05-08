@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-05-04T06:20:41.902565+00:00",
+  "generated_at": "2026-05-08T13:43:41.643575+00:00",
   "iso_week": 19,
-  "index": 0,
+  "index": 3,
   "project": {
-    "id": "mytodoapp",
-    "name": "myTodoApp",
-    "description": "Android to-do app with local SQLite persistence and offline-first flow.",
+    "id": "zephyr_t114_validator",
+    "name": "Zephyr: Heltec Mesh Node T114 Board + Validator",
+    "description": "Board support PR for Heltec Mesh Node T114 (nRF52840 + LoRa + TFT) plus an interactive validator sample to test display, buttons and hardware.",
     "tech": [
       {
-        "id": "ionic",
-        "label": "Ionic"
+        "id": "c",
+        "label": "C"
       },
       {
-        "id": "android",
-        "label": "Android"
+        "id": "zephyr",
+        "label": "Zephyr RTOS"
       },
       {
-        "id": "sqlite",
-        "label": "SQLite"
+        "id": "embedded",
+        "label": "Embedded Systems"
       }
     ],
-    "repo": "https://github.com/yeraylois/myTodoApp"
+    "repo": "https://github.com/yeraylois/zephyr"
   }
 }
