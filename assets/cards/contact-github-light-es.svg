@@ -1,3 +1,12 @@
+<!--
+*************************************************************
+*   PROJECT : YERAYLOIS GITHUB PROFILE                      *
+*   FILE    : assets/cards/contact-github-light-es.svg      *
+*   PURPOSE : GITHUB CONTACT CARD (LIGHT/ES)                *
+*   AUTHOR  : Yeray Lois Sanchez                            *
+*   EMAIL   : yerayloissanchez@gmail.com                    *
+*************************************************************
+-->
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="56" viewBox="0 0 840 56" role="img" aria-label="Contact: GitHub">
   <defs>
     <clipPath id="card"><rect width="840" height="56" rx="10"/></clipPath>
