@@ -5,12 +5,13 @@
  *   FILE    : .github/scripts/generate_spotlight.py         *
  *   PURPOSE : GENERATE WEEKLY PROJECT SPOTLIGHT SVG CARD    *
  *   AUTHOR  : Yeray Lois Sanchez                            *
- *   EMAIL   : yeray.lois@udc.es                             *
+ *   EMAIL   : yerayloissanchez@gmail.com                    *
  *************************************************************/
 """
 
 from __future__ import annotations
 
+import base64
 import datetime as dt
 import html
 import json
@@ -70,7 +71,7 @@ def short_repo(url: str) -> str:
     return path
 
 
-def wrap_desc(text: str, max_chars: int = 75, max_lines: int = 2) -> list[str]:
+def wrap_desc(text: str, max_chars: int = 118, max_lines: int = 2) -> list[str]:
     words = text.split()
     lines: list[str] = []
     current = ""
@@ -106,7 +107,18 @@ def accent_gradient(tech_items: list[dict]) -> str:
     return f'<linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">{stops}</linearGradient>'
 
 
-def tech_dots(tech_items: list[dict], x0: int, y: int, text_fill: str) -> str:
+def tech_items_width(tech_items: list[dict]) -> int:
+    total = 0
+    for item in tech_items:
+        label = item.get("label", "")
+        text_w = max(len(label) * 7.5, 18)
+        total += 13 + int(text_w) + 22
+    return max(0, total - 22)
+
+
+def tech_dots(tech_items: list[dict], y: int, text_fill: str) -> str:
+    total_width = tech_items_width(tech_items)
+    x0 = (WIDTH - total_width) // 2
     parts: list[str] = []
     x = x0
     for item in tech_items:
@@ -134,14 +146,41 @@ def build_svg(project: dict, week: int, theme: str) -> str:
     name_size = min(28, max(20, int(700 / max(name_len * 0.62, 1))))
 
     desc_svg = "\n  ".join(
-        f'<text x="32" y="{100 + i * 19}" fill="{t["text2"]}" '
+        f'<text x="32" y="{102 + i * 19}" fill="{t["text2"]}" '
         f'font-size="14" font-family="{FONT}">{line}</text>'
         for i, line in enumerate(desc_lines)
     )
 
     tech_y = 163
-    tech_svg = tech_dots(tech_items, 32, tech_y, t["text1"])
+    tech_svg = tech_dots(tech_items, tech_y, t["text1"])
     accent_grad = accent_gradient(tech_items)
+
+    CONTENT_LEFT = 32
+    CONTENT_RIGHT = 808
+    AVAILABLE_WIDTH = CONTENT_RIGHT - CONTENT_LEFT  # 776
+
+    icon_size = 32
+    icon_gap = 10
+    is_zephyr = "zephyr" in project.get("id", "").lower()
+
+    def text_width_estimate(text: str, size: int) -> float:
+        clean = text.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
+        return len(clean) * (size * 0.58)
+
+    if is_zephyr:
+        text_only = name.replace("Zephyr: ", "")
+        tw = text_width_estimate(text_only, name_size)
+        total_width = icon_size + icon_gap + tw
+        start_x = CONTENT_LEFT + (AVAILABLE_WIDTH - total_width) / 2
+        icon_x = start_x
+        text_x = start_x + icon_size + icon_gap
+        zephyr_bytes = (ROOT / "assets" / "icons" / "zephyr.svg").read_bytes()
+        zephyr_b64 = base64.b64encode(zephyr_bytes).decode()
+        title_svg = f'<image x="{icon_x}" y="44" width="{icon_size}" height="{icon_size}" href="data:image/svg+xml;base64,{zephyr_b64}"/>\n  <text x="{text_x}" y="72" fill="{t["text1"]}" font-size="{name_size}" font-weight="700" font-family="{FONT}">{text_only}</text>'
+    else:
+        tw = text_width_estimate(name, name_size)
+        start_x = CONTENT_LEFT + (AVAILABLE_WIDTH - tw) / 2
+        title_svg = f'<text x="{start_x}" y="72" fill="{t["text1"]}" font-size="{name_size}" font-weight="700" font-family="{FONT}">{name}</text>'
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-label="Project spotlight: {html.escape(project.get('name', ''))}">
   <defs>
@@ -155,7 +194,7 @@ def build_svg(project: dict, week: int, theme: str) -> str:
   <text x="32" y="34" fill="{t['text2']}" font-size="11" font-weight="600" font-family="{FONT}" letter-spacing="1">WEEK {week:02d}</text>
   <text x="{WIDTH - 32}" y="34" fill="{t['link']}" font-size="12" font-weight="400" font-family="{FONT_MONO}" text-anchor="end">{repo}</text>
 
-  <text x="32" y="72" fill="{t['text1']}" font-size="{name_size}" font-weight="700" font-family="{FONT}">{name}</text>
+  {title_svg}
 
   {desc_svg}
 
