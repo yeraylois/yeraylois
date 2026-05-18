@@ -1,10 +1,1 @@
-<!--
-*************************************************************
-*   PROJECT : YERAYLOIS GITHUB PROFILE                      *
-*   FILE    : assets/icons/link.svg                         *
-*   PURPOSE : EXTERNAL LINK ICON FOR PROJECT TABLE          *
-*   AUTHOR  : Yeray Lois Sanchez                            *
-*   EMAIL   : yerayloissanchez@gmail.com                    *
-*************************************************************
--->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03l-3.148 3.147a.75.75 0 1 1-1.06-1.06l3.147-3.148-1.543-1.543a.25.25 0 0 1 .177-.427Z"/></svg>
