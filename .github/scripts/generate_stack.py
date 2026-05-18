@@ -14,6 +14,7 @@ from __future__ import annotations
 import base64
 import html
 import json
+import re
 import urllib.request
 from pathlib import Path
 
@@ -179,6 +180,9 @@ def embed_local_icon(rel_path: str, fill_color: str | None = None) -> str:
     if not icon_path.exists():
         return ""
     svg_text = icon_path.read_text(encoding="utf-8")
+    # Embedded SVGs render more reliably without XML prologs or leading comments.
+    svg_text = re.sub(r"^\s*<\?xml[^>]*>\s*", "", svg_text)
+    svg_text = re.sub(r"^\s*<!--.*?-->\s*", "", svg_text, flags=re.DOTALL)
     if fill_color:
         svg_text = svg_text.replace('fill="currentColor"', f'fill="{fill_color}"')
         svg_text = svg_text.replace('fill="#000000"', f'fill="{fill_color}"')
