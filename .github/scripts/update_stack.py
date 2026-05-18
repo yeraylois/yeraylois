@@ -23,6 +23,7 @@ USERNAME = os.environ.get("GITHUB_USERNAME", "yeraylois")
 REPO_NAME = os.environ.get("GITHUB_REPO", "yeraylois")
 README_PATH = Path("README.md")
 TECH_ICONS_PATH = Path("assets/tech_icons.yml")
+STACK_JSON = Path("assets/stack/recent.json")
 
 # FRAMEWORK DETECTION PATTERNS FROM REPO DESCRIPTIONS/TOPICS
 FRAMEWORK_PATTERNS = {
@@ -296,11 +297,6 @@ def load_tech_icons():
     return data.get("icons", {}), data.get("fallback", "")
 
 
-def generate_icon_markdown(tech_name, icons_map, fallback_url):
-    url = icons_map.get(tech_name, fallback_url)
-    return f'  <img src="{url}" width="34" title="{tech_name}"/>'
-
-
 def get_recent_stack(repos, limit=6):
     """
     Returns list of (tech_name, last_push_date) ordered by recency.
@@ -379,24 +375,6 @@ def create_issue_for_new_tech(new_techs, repo_name):
         print(f"Failed to create issue: {e}", file=sys.stderr)
 
 
-def update_readme_section(content, section_name, new_lines):
-    start_marker = f"<!--START_SECTION:{section_name}-->"
-    end_marker = f"<!--END_SECTION:{section_name}-->"
-    
-    start_idx = content.find(start_marker)
-    end_idx = content.find(end_marker)
-    
-    if start_idx == -1 or end_idx == -1:
-        print(f"WARNING: Markers for {section_name} not found!")
-        return content
-    
-    before = content[:start_idx + len(start_marker)]
-    after = content[end_idx:]
-    
-    new_content = before + "\n" + "\n".join(new_lines) + "\n" + after
-    return new_content
-
-
 def main():
     print("=" * 60)
     print("  TECH STACK UPDATER")
@@ -428,28 +406,22 @@ def main():
         print("\n✅ All technologies have icon mappings")
     
 
-    recent_lines = ["".join(generate_icon_markdown(tech, icons_map, fallback_url) for tech, _ in recent_stack)]
-    
     # STATIC LOVED STACK
     loved_techs = ["Bash", "C", "Git"]
-    loved_lines = ["".join(generate_icon_markdown(tech, icons_map, fallback_url) for tech in loved_techs)]
-    
 
-    print("\nUpdating README...")
-    with open(README_PATH, "r") as f:
-        content = f.read()
-    
+    print("\nSaving stack data...")
+    STACK_JSON.parent.mkdir(parents=True, exist_ok=True)
+    stack_data = {
+        "recent": [tech for tech, _ in recent_stack],
+        "loved": loved_techs,
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+    }
+    with open(STACK_JSON, "w") as f:
+        json.dump(stack_data, f, indent=2)
 
-    content = update_readme_section(content, "recent_stack", recent_lines)
-    content = update_readme_section(content, "loved_stack", loved_lines)
-    
-
-    with open(README_PATH, "w") as f:
-        f.write(content)
-    
-    print("\n✅ README updated successfully!")
-    print(f"   Recent stack: {len(recent_lines)} technologies")
-    print(f"   Loved stack: {len(loved_lines)} technologies")
+    print("\n✅ Stack data saved successfully!")
+    print(f"   Recent stack: {len(stack_data['recent'])} technologies")
+    print(f"   Loved stack: {len(stack_data['loved'])} technologies")
 
 
 if __name__ == "__main__":
