@@ -1,3 +1,12 @@
+<!--
+*************************************************************
+*   PROJECT : YERAYLOIS GITHUB PROFILE                      *
+*   FILE    : assets/cards/contact-linkedin-dark-en.svg     *
+*   PURPOSE : LINKEDIN CONTACT CARD (DARK/EN)               *
+*   AUTHOR  : Yeray Lois Sanchez                            *
+*   EMAIL   : yerayloissanchez@gmail.com                    *
+*************************************************************
+-->
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="56" viewBox="0 0 840 56" role="img" aria-label="Contact: LinkedIn">
   <defs>
     <clipPath id="card"><rect width="840" height="56" rx="10"/></clipPath>

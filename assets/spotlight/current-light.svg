@@ -1,3 +1,12 @@
+<!--
+*************************************************************
+*   PROJECT : YERAYLOIS GITHUB PROFILE                      *
+*   FILE    : assets/spotlight/current-light.svg            *
+*   PURPOSE : WEEKLY PROJECT SPOTLIGHT (LIGHT)              *
+*   AUTHOR  : Yeray Lois Sanchez                            *
+*   EMAIL   : yerayloissanchez@gmail.com                    *
+*************************************************************
+-->
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="195" viewBox="0 0 840 195" role="img" aria-label="Project spotlight: Zephyr: Heltec Mesh Node T114 Board &amp; Validator">
   <defs>
     <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#555555"/><stop offset="50%" stop-color="#662d91"/><stop offset="100%" stop-color="#F5822A"/></linearGradient>
