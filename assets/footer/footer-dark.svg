@@ -1,12 +1,3 @@
-<!--
-*************************************************************
-*   PROJECT : YERAYLOIS GITHUB PROFILE                      *
-*   FILE    : assets/footer/footer-dark.svg                 *
-*   PURPOSE : ANIMATED FOOTER (DARK)                        *
-*   AUTHOR  : Yeray Lois Sanchez                            *
-*   EMAIL   : yerayloissanchez@gmail.com                    *
-*************************************************************
--->
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="100" viewBox="0 0 840 100" role="img" aria-label="Footer">
   <rect width="840" height="100" fill="#0d1117"/>
   <line x1="40" y1="0" x2="800" y2="0" stroke="transparent" stroke-width="1"/>
