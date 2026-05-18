@@ -1,0 +1,37 @@
+[
+  {
+    "id": "aii_2025_tt",
+    "name": "AII_2025_TT",
+    "description_es": "Infraestructura y observabilidad",
+    "description_en": "Infrastructure and observability",
+    "tech": [
+      { "id": "ansible", "label": "Ansible" },
+      { "id": "docker", "label": "Docker" },
+      { "id": "python", "label": "Python" },
+      { "id": "angular", "label": "Angular" },
+      { "id": "githubactions", "label": "GitHub Actions" }
+    ],
+    "repo": "https://github.com/yeraylois/AII_2025_TT"
+  },
+  {
+    "id": "se_tt2",
+    "name": "SE",
+    "description_es": "Sistemas embebidos y control RT",
+    "description_en": "Embedded systems and RT control",
+    "tech": [
+      { "id": "c", "label": "C" }
+    ],
+    "repo": "https://github.com/yeraylois/SE/tree/TraballoTutelado-2"
+  },
+  {
+    "id": "zephyr_t114",
+    "name": "Zephyr T114",
+    "description_es": "Soporte Zephyr T114 & validador",
+    "description_en": "T114 Zephyr support & validator",
+    "tech": [
+      { "id": "c", "label": "C" },
+      { "id": "zephyr", "label": "Zephyr RTOS" }
+    ],
+    "repo": "https://github.com/yeraylois/zephyr"
+  }
+]

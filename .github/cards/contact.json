@@ -1,0 +1,29 @@
+[
+  {
+    "id": "email",
+    "channel": "Email",
+    "handle": "yerayloissanchez@gmail.com",
+    "use_es": "Contacto profesional",
+    "use_en": "Professional contact",
+    "url": "mailto:yerayloissanchez@gmail.com",
+    "icon": "mail.svg"
+  },
+  {
+    "id": "linkedin",
+    "channel": "LinkedIn",
+    "handle": "Yeray Lois Sánchez",
+    "use_es": "Networking y empleo",
+    "use_en": "Networking and jobs",
+    "url": "https://www.linkedin.com/in/yeray-lois",
+    "icon": "linkedin.svg"
+  },
+  {
+    "id": "github",
+    "channel": "GitHub",
+    "handle": "yeraylois",
+    "use_es": "Código y proyectos",
+    "use_en": "Code and projects",
+    "url": "https://github.com/yeraylois",
+    "icon": "github.svg"
+  }
+]
