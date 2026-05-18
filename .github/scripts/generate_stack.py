@@ -15,6 +15,7 @@ import base64
 import html
 import json
 import re
+import ssl
 import urllib.request
 from pathlib import Path
 
@@ -197,7 +198,15 @@ def fetch_and_cache_icon(tech_name: str, url: str) -> str:
     local_path = ICONS_DIR / f"{safe_name}.svg"
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
+        context = None
+        try:
+            import certifi
+
+            context = ssl.create_default_context(cafile=certifi.where())
+        except Exception:
+            context = None
+
+        with urllib.request.urlopen(req, timeout=15, context=context) as resp:
             data = resp.read()
         ICONS_DIR.mkdir(parents=True, exist_ok=True)
         local_path.write_bytes(data)
