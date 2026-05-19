@@ -1,1 +1,16 @@
-{"recent": ["Docker", "Python", "Ansible", "TypeScript", "Angular", "C"], "loved": ["Bash", "C", "Git"]}
+{
+  "recent": [
+    "Git",
+    "Zephyr",
+    "Arch",
+    "RTOS",
+    "Meshtastic",
+    "Protobuf"
+  ],
+  "loved": [
+    "Bash",
+    "C",
+    "Git"
+  ],
+  "updated_at": "2026-05-19T04:29:25.080852+00:00"
+}
