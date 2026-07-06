@@ -1,9 +1,9 @@
 {
   "recent": [
     "Git",
-    "RTOS",
     "Arch",
     "Zephyr",
+    "RTOS",
     "Meshtastic",
     "Protobuf"
   ],
@@ -12,5 +12,5 @@
     "C",
     "Git"
   ],
-  "updated_at": "2026-07-05T06:42:03.855743+00:00"
+  "updated_at": "2026-07-06T07:14:52.977727+00:00"
 }
