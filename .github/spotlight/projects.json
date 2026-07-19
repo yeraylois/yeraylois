@@ -2,7 +2,8 @@
   {
     "id": "mytodoapp",
     "name": "myTodoApp",
-    "description": "Android to-do app with local SQLite persistence and offline-first flow.",
+    "description_es": "Aplicación Android de tareas con persistencia local SQLite y funcionamiento offline-first.",
+    "description_en": "Android to-do app with local SQLite persistence and offline-first flow.",
     "tech": [
       { "id": "ionic", "label": "Ionic" },
       { "id": "android", "label": "Android" },
@@ -13,7 +14,8 @@
   {
     "id": "aii_2025_tt",
     "name": "AII_2025_TT",
-    "description": "Infrastructure automation and observability stack with IaC and monitoring.",
+    "description_es": "Automatización de infraestructura y observabilidad con IaC y monitorización.",
+    "description_en": "Infrastructure automation and observability stack with IaC and monitoring.",
     "tech": [
       { "id": "ansible", "label": "Ansible" },
       { "id": "docker", "label": "Docker" },
@@ -27,7 +29,8 @@
   {
     "id": "se_tt2",
     "name": "SE (TraballoTutelado-2)",
-    "description": "Embedded systems project focused on firmware and real-time control.",
+    "description_es": "Proyecto de sistemas embebidos centrado en firmware y control en tiempo real.",
+    "description_en": "Embedded systems project focused on firmware and real-time control.",
     "tech": [
       { "id": "c", "label": "C" },
       { "id": "microchip", "label": "Microcontrollers" },
@@ -38,7 +41,8 @@
   {
     "id": "zephyr_t114_validator",
     "name": "Zephyr: Heltec Mesh Node T114 Board & Validator",
-    "description": "Board support PR for Heltec Mesh Node T114 with interactive validator sample testing display, buttons and hardware.",
+    "description_es": "Soporte de placa para Heltec Mesh Node T114 y muestra interactiva para validar pantalla, botones y hardware.",
+    "description_en": "Board support PR for Heltec Mesh Node T114 with interactive validator sample testing display, buttons and hardware.",
     "tech": [
       { "id": "c", "label": "C" },
       { "id": "zephyr", "label": "Zephyr RTOS" },

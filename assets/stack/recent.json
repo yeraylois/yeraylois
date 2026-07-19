@@ -1,16 +1,19 @@
 {
   "recent": [
-    "Git",
-    "Zephyr",
-    "RTOS",
-    "Arch",
-    "Meshtastic",
-    "Protobuf"
+    "LoRa",
+    "MQTT",
+    "Qt",
+    "Python",
+    "JavaScript",
+    "Shell"
   ],
   "loved": [
     "Bash",
     "C",
     "Git"
   ],
-  "updated_at": "2026-07-19T05:55:36.669318+00:00"
+  "updated_at": "2026-07-19T10:00:00.564745+00:00",
+  "repository_scope": "public-private",
+  "repositories_scanned": 30,
+  "private_repositories_scanned": 27
 }

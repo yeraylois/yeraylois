@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="150" viewBox="0 0 840 150" role="img" aria-label="Proyecto semanal: Zephyr: Heltec Mesh Node T114 Board &amp; Validator">
+  <line x1="0" y1="1" x2="840" y2="1" stroke="#d8dee4"/>
+  <line x1="0" y1="1" x2="64" y2="1" stroke="#5c6bc0" stroke-width="2"/>
+  <line x1="102" y1="20" x2="102" y2="132" stroke="#d8dee4"/>
+
+  <text x="0" y="48" fill="#1f2328" font-size="25" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-weight="650">W29</text>
+  <text x="0" y="69" fill="#8c959f" font-size="8" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" letter-spacing="0.8">SELECCIÓN ACTUAL</text>
+
+  <text x="132" y="49" fill="#1f2328" font-size="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="650">Zephyr: Heltec Mesh Node T114 Board &amp; Validator</text>
+  <text x="840" y="24" fill="#8c959f" font-size="9.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" text-anchor="end" letter-spacing="0.35">yeraylois/zephyr</text>
+  <text x="132" y="83" fill="#59636e" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Soporte de placa para Heltec Mesh Node T114 y muestra interactiva para validar pantalla, botones y</text><text x="132" y="101" fill="#59636e" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">hardware.</text>
+  <line x1="132" y1="132" x2="144" y2="132" stroke="#5c6bc0" stroke-width="2"/><text x="150" y="135" fill="#59636e" font-size="9" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" letter-spacing="0.55">C</text><line x1="200" y1="132" x2="212" y2="132" stroke="#7f4bc4" stroke-width="2"/><text x="218" y="135" fill="#59636e" font-size="9" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" letter-spacing="0.55">ZEPHYR RTOS</text><line x1="302" y1="132" x2="314" y2="132" stroke="#f5822a" stroke-width="2"/><text x="320" y="135" fill="#59636e" font-size="9" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" letter-spacing="0.55">EMBEDDED SYSTEMS</text>
+  <text x="816" y="135" fill="#8c959f" font-size="8.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" text-anchor="end" letter-spacing="0.75">ABRIR REPOSITORIO</text>
+  <text x="840" y="138" fill="#5c6bc0" font-size="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" text-anchor="end">↗</text>
+</svg>

@@ -1,55 +1,53 @@
-#
-# /*************************************************************
-# *   PROJECT : YERAYLOIS GITHUB PROFILE                      *
-# *   FILE    : .github/workflows/spotlight.yml               *
-# *   PURPOSE : ROTATE WEEKLY PROJECT SPOTLIGHT CARD          *
-# *   AUTHOR  : Yeray Lois Sanchez                            *
-# *   EMAIL   : yerayloissanchez@gmail.com                    *
-# *************************************************************/
-#
-
 name: Rotate Project Spotlight
 
 on:
   schedule:
-    - cron: "17 3 * * 1"
+    - cron: "31 3 * * 1"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: project-spotlight
+  group: project-spotlight-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   spotlight:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v6
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
         with:
-          python-version: "3.x"
+          python-version: "3.13"
 
-      - name: Generate spotlight SVG
+      - name: Test spotlight generator
+        working-directory: .github/scripts
+        run: python -m unittest -v test_generate_spotlight.py
+
+      - name: Generate bilingual spotlight SVGs
         env:
           SPOTLIGHT_PINNED_ID: "zephyr_t114_validator"
+        run: python .github/scripts/generate_spotlight.py
+
+      - name: Validate generated SVGs
         run: |
-          python .github/scripts/generate_spotlight.py
+          python -c 'import xml.etree.ElementTree as ET; from pathlib import Path; [ET.parse(path) for path in Path("assets/spotlight").glob("current-*.svg")]'
+          git diff --check
 
       - name: Commit spotlight changes
         run: |
-          set -euo pipefail
           if git diff --quiet -- assets/spotlight .github/spotlight/current.json; then
             echo "No spotlight changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git rm -f --ignore-unmatch assets/spotlight/current.svg
-          git add assets/spotlight/current-dark.svg assets/spotlight/current-light.svg .github/spotlight/current.json
-          git commit -m "chore(spotlight): rotate weekly project spotlight [skip ci]"
+          git add -- assets/spotlight/current-*.svg .github/spotlight/current.json
+          git commit -m "chore(spotlight): rotate weekly project [skip ci]"
           git push

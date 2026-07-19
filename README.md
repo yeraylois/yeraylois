@@ -8,7 +8,7 @@
  *************************************************************/
 -->
 
-<h1 align="center">𝐘𝐞𝐫𝐚𝐲 𝐋𝐨𝐢𝐬 𝐒𝐚́𝐧𝐜𝐡𝐞𝐳</h1>
+<h1 align="center">𝐘𝐞𝐫𝐚𝐲 𝐋𝐨𝐢𝐬 𝐒𝐚𝐧𝐜𝐡𝐞𝐳</h1>
 <p align="center"><strong>𝐂𝐨𝐦𝐩𝐮𝐭𝐞𝐫 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠 𝐆𝐫𝐚𝐝𝐮𝐚𝐭𝐞 (𝟐𝟎𝟐𝟏-𝟐𝟎𝟐𝟓) @ 𝐔𝐃𝐂 · 𝐇𝐀𝐑𝐃𝐖𝐀𝐑𝐄</strong></p>
 
 <p align="center">
@@ -26,8 +26,8 @@
 </p>
 
 <p align="center">
-  <a href="#espanol"><img src="https://img.shields.io/badge/IDIOMA-ESPA%C3%91OL-FF6A00?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Español"/></a>
-  <a href="#english"><img src="https://img.shields.io/badge/LANGUAGE-ENGLISH-0A66C2?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English"/></a>
+  <a href="#sobre-mi"><img src="https://img.shields.io/badge/IDIOMA-ESPA%C3%91OL-FF6A00?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Español"/></a>
+  <a href="#about-me"><img src="https://img.shields.io/badge/LANGUAGE-ENGLISH-0A66C2?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English"/></a>
 </p>
 
 <p align="center">
@@ -43,6 +43,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/🇪🇸-ESPAÑOL-FF6A00?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Español" />
 </p>
+
+<a id="sobre-mi"></a>
 
 ### 𝐒𝐎𝐁𝐑𝐄 𝐌𝐈
 
@@ -61,9 +63,9 @@ Graduado en Ingeniería Informática por la UDC (2021-2025), enfocado en sistema
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light.svg" />
-    <img src="./assets/spotlight/current-dark.svg" alt="Project Spotlight semanal" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark-es.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light-es.svg" />
+    <img src="./assets/spotlight/current-dark-es.svg" alt="Proyecto semanal destacado" width="100%" />
   </picture>
 </p>
 
@@ -155,6 +157,8 @@ Graduado en Ingeniería Informática por la UDC (2021-2025), enfocado en sistema
   <img src="https://img.shields.io/badge/🇺🇸-ENGLISH-0A66C2?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English" />
 </p>
 
+<a id="about-me"></a>
+
 ### 𝐀𝐁𝐎𝐔𝐓 𝐌𝐄
 
 Computer Engineering graduate from UDC (2021-2025), focused on embedded systems, automation and execution-oriented developer tooling.
@@ -172,9 +176,9 @@ Computer Engineering graduate from UDC (2021-2025), focused on embedded systems,
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light.svg" />
-    <img src="./assets/spotlight/current-dark.svg" alt="Weekly project spotlight" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark-en.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light-en.svg" />
+    <img src="./assets/spotlight/current-dark-en.svg" alt="Weekly project spotlight" width="100%" />
   </picture>
 </p>
 
