@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <a href="mailto:yerayloissanchez@gmail.com"><img src="https://img.shields.io/badge/EMAIL-yeray.lois%40udc.es-0A66C2?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="mailto:yerayloissanchez@gmail.com"><img src="https://img.shields.io/badge/EMAIL-yerayloissanchez%40gmail.com-0A66C2?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://www.linkedin.com/in/yeray-lois"><img src="https://img.shields.io/badge/LINKEDIN-yeraylois-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://github.com/yeraylois"><img src="https://img.shields.io/github/followers/yeraylois?label=FOLLOW&style=for-the-badge" alt="GitHub followers" /></a>
 </p>
