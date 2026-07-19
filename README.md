@@ -8,7 +8,7 @@
  *************************************************************/
 -->
 
-<h1 align="center">𝐘𝐞𝐫𝐚𝐲 𝐋𝐨𝐢𝐬 𝐒𝐚́𝐧𝐜𝐡𝐞𝐳</h1>
+<h1 align="center">𝐘𝐞𝐫𝐚𝐲 𝐋𝐨𝐢𝐬 𝐒𝐚𝐧𝐜𝐡𝐞𝐳</h1>
 <p align="center"><strong>𝐂𝐨𝐦𝐩𝐮𝐭𝐞𝐫 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠 𝐆𝐫𝐚𝐝𝐮𝐚𝐭𝐞 (𝟐𝟎𝟐𝟏-𝟐𝟎𝟐𝟓) @ 𝐔𝐃𝐂 · 𝐇𝐀𝐑𝐃𝐖𝐀𝐑𝐄</strong></p>
 
 <p align="center">
@@ -26,8 +26,8 @@
 </p>
 
 <p align="center">
-  <a href="#espanol"><img src="https://img.shields.io/badge/IDIOMA-ESPA%C3%91OL-FF6A00?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Español"/></a>
-  <a href="#english"><img src="https://img.shields.io/badge/LANGUAGE-ENGLISH-0A66C2?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English"/></a>
+  <a href="#sobre-mi"><img src="https://img.shields.io/badge/IDIOMA-ESPA%C3%91OL-FF6A00?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Español"/></a>
+  <a href="#about-me"><img src="https://img.shields.io/badge/LANGUAGE-ENGLISH-0A66C2?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English"/></a>
 </p>
 
 <p align="center">
@@ -44,11 +44,13 @@
   <img src="https://img.shields.io/badge/🇪🇸-ESPAÑOL-FF6A00?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Español" />
 </p>
 
-### 𝐒𝐎𝐁𝐑𝐄 𝐌𝐈
+<a id="sobre-mi"></a>
+
+#### 𝐒𝐎𝐁𝐑𝐄 𝐌𝐈
 
 Graduado en Ingeniería Informática por la UDC (2021-2025), enfocado en sistemas embebidos, automatización y desarrollo de herramientas orientadas a ejecución real.
 
-<h3 align="center">𝐌𝐄𝐓𝐑𝐈𝐂𝐀𝐒 𝐆𝐈𝐓𝐇𝐔𝐁</h3>
+<h4 align="center">𝐌𝐄𝐓𝐑𝐈𝐂𝐀𝐒 𝐆𝐈𝐓𝐇𝐔𝐁</h4>
 
 <p align="center">
   <picture>
@@ -57,17 +59,17 @@ Graduado en Ingeniería Informática por la UDC (2021-2025), enfocado en sistema
   </picture>
 </p>
 
-### 𝐏𝐑𝐎𝐘𝐄𝐂𝐓𝐎 𝐒𝐄𝐌𝐀𝐍𝐀𝐋
+#### 𝐏𝐑𝐎𝐘𝐄𝐂𝐓𝐎 𝐒𝐄𝐌𝐀𝐍𝐀𝐋
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light.svg" />
-    <img src="./assets/spotlight/current-dark.svg" alt="Project Spotlight semanal" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark-es.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light-es.svg" />
+    <img src="./assets/spotlight/current-dark-es.svg" alt="Proyecto semanal destacado" width="100%" />
   </picture>
 </p>
 
-### 𝐒𝐍𝐀𝐊𝐄 𝐃𝐄 𝐂𝐎𝐍𝐓𝐑𝐈𝐁𝐔𝐂𝐈𝐎𝐍𝐄𝐒
+#### 𝐒𝐍𝐀𝐊𝐄 𝐃𝐄 𝐂𝐎𝐍𝐓𝐑𝐈𝐁𝐔𝐂𝐈𝐎𝐍𝐄𝐒
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yeraylois/yeraylois/output/github-contribution-grid-snake-dark.svg" />
@@ -75,7 +77,7 @@ Graduado en Ingeniería Informática por la UDC (2021-2025), enfocado en sistema
   <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/yeraylois/yeraylois/output/github-contribution-grid-snake.svg" width="100%" />
 </picture>
 
-### 𝐒𝐓𝐀𝐂𝐊 𝐓𝐄𝐂𝐍𝐎𝐋𝐎𝐆𝐈𝐂𝐎
+#### 𝐒𝐓𝐀𝐂𝐊 𝐓𝐄𝐂𝐍𝐎𝐋𝐎𝐆𝐈𝐂𝐎
 
 <p align="center">
   <picture>
@@ -85,7 +87,7 @@ Graduado en Ingeniería Informática por la UDC (2021-2025), enfocado en sistema
   </picture>
 </p>
 
-### 𝐏𝐑𝐎𝐘𝐄𝐂𝐓𝐎𝐒 𝐃𝐄𝐒𝐓𝐀𝐂𝐀𝐃𝐎𝐒
+#### 𝐏𝐑𝐎𝐘𝐄𝐂𝐓𝐎𝐒 𝐃𝐄𝐒𝐓𝐀𝐂𝐀𝐃𝐎𝐒
 
 <p align="center">
   <a href="https://github.com/yeraylois/AII_2025_TT">
@@ -113,7 +115,7 @@ Graduado en Ingeniería Informática por la UDC (2021-2025), enfocado en sistema
   </a>
 </p>
 
-### 𝐂𝐎𝐍𝐓𝐀𝐂𝐓𝐎
+#### 𝐂𝐎𝐍𝐓𝐀𝐂𝐓𝐎
 
 <p align="center">
   <a href="mailto:yerayloissanchez@gmail.com">
@@ -155,11 +157,13 @@ Graduado en Ingeniería Informática por la UDC (2021-2025), enfocado en sistema
   <img src="https://img.shields.io/badge/🇺🇸-ENGLISH-0A66C2?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English" />
 </p>
 
-### 𝐀𝐁𝐎𝐔𝐓 𝐌𝐄
+<a id="about-me"></a>
+
+#### 𝐀𝐁𝐎𝐔𝐓 𝐌𝐄
 
 Computer Engineering graduate from UDC (2021-2025), focused on embedded systems, automation and execution-oriented developer tooling.
 
-<h3 align="center">𝐆𝐈𝐓𝐇𝐔𝐁 𝐌𝐄𝐓𝐑𝐈𝐂𝐒</h3>
+<h4 align="center">𝐆𝐈𝐓𝐇𝐔𝐁 𝐌𝐄𝐓𝐑𝐈𝐂𝐒</h4>
 
 <p align="center">
   <picture>
@@ -168,17 +172,17 @@ Computer Engineering graduate from UDC (2021-2025), focused on embedded systems,
   </picture>
 </p>
 
-### 𝐖𝐄𝐄𝐊𝐋𝐘 𝐏𝐑𝐎𝐉𝐄𝐂𝐓 𝐒𝐏𝐎𝐓𝐋𝐈𝐆𝐇𝐓
+#### 𝐖𝐄𝐄𝐊𝐋𝐘 𝐏𝐑𝐎𝐉𝐄𝐂𝐓 𝐒𝐏𝐎𝐓𝐋𝐈𝐆𝐇𝐓
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light.svg" />
-    <img src="./assets/spotlight/current-dark.svg" alt="Weekly project spotlight" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark-en.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light-en.svg" />
+    <img src="./assets/spotlight/current-dark-en.svg" alt="Weekly project spotlight" width="100%" />
   </picture>
 </p>
 
-### 𝐂𝐎𝐍𝐓𝐑𝐈𝐁𝐔𝐓𝐈𝐎𝐍 𝐒𝐍𝐀𝐊𝐄
+#### 𝐂𝐎𝐍𝐓𝐑𝐈𝐁𝐔𝐓𝐈𝐎𝐍 𝐒𝐍𝐀𝐊𝐄
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yeraylois/yeraylois/output/github-contribution-grid-snake-dark.svg" />
@@ -186,7 +190,7 @@ Computer Engineering graduate from UDC (2021-2025), focused on embedded systems,
   <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/yeraylois/yeraylois/output/github-contribution-grid-snake.svg" width="100%" />
 </picture>
 
-### 𝐓𝐄𝐂𝐇 𝐒𝐓𝐀𝐂𝐊
+#### 𝐓𝐄𝐂𝐇 𝐒𝐓𝐀𝐂𝐊
 
 <p align="center">
   <picture>
@@ -196,7 +200,7 @@ Computer Engineering graduate from UDC (2021-2025), focused on embedded systems,
   </picture>
 </p>
 
-### 𝐅𝐄𝐀𝐓𝐔𝐑𝐄𝐃 𝐏𝐑𝐎𝐉𝐄𝐂𝐓𝐒
+#### 𝐅𝐄𝐀𝐓𝐔𝐑𝐄𝐃 𝐏𝐑𝐎𝐉𝐄𝐂𝐓𝐒
 
 <p align="center">
   <a href="https://github.com/yeraylois/AII_2025_TT">
@@ -224,7 +228,7 @@ Computer Engineering graduate from UDC (2021-2025), focused on embedded systems,
   </a>
 </p>
 
-### 𝐂𝐎𝐍𝐓𝐀𝐂𝐓
+#### 𝐂𝐎𝐍𝐓𝐀𝐂𝐓
 
 <p align="center">
   <a href="mailto:yerayloissanchez@gmail.com">
