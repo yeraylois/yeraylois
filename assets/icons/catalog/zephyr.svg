@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 0 170 155" role="img" aria-label="Zephyr">
+  <defs>
+    <linearGradient id="z1" x1="137" y1="122" x2="259" y2="8" gradientUnits="userSpaceOnUse"><stop stop-color="#7929d2"/><stop offset="1" stop-color="#0070c5"/></linearGradient>
+    <linearGradient id="z2" x1="173" y1="8" x2="221" y2="122" gradientUnits="userSpaceOnUse"><stop stop-color="#00aeff"/><stop offset="1" stop-color="#9454db"/></linearGradient>
+    <linearGradient id="z3" x1="173" y1="8" x2="259" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="#b1e4fa"/><stop offset="1" stop-color="#66a9dc"/></linearGradient>
+  </defs>
+  <polygon fill="#7929d2" points="137.154,121.601 105.31,135.046 132.385,148.72"/>
+  <polygon fill="url(#z1)" points="137.154,121.601 220.982,44.482 258.666,94.416"/>
+  <polygon fill="url(#z2)" points="137.154,121.601 172.959,8.13 220.982,44.482"/>
+  <polygon fill="url(#z3)" points="172.959,8.13 258.666,8.13 220.982,44.482"/>
+  <polygon fill="url(#z2)" points="258.666,94.416 258.666,8.13 220.982,44.482"/>
+</svg>

@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="56" viewBox="0 0 840 56" role="img" aria-label="Contact: LinkedIn">
-  <defs>
-    <clipPath id="card"><rect width="840" height="56" rx="10"/></clipPath>
-  </defs>
-  <rect width="840" height="56" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-  <rect x="0" y="0" width="4" height="56" fill="#0A66C2" clip-path="url(#card)"/>
-  <image x="18" y="16" width="24" height="24" href="data:image/svg+xml;base64,PCEtLQoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqCiogICBQUk9KRUNUIDogWUVSQVlMT0lTIEdJVEhVQiBQUk9GSUxFICAgICAgICAgICAgICAgICAgICAgICoKKiAgIEZJTEUgICAgOiBhc3NldHMvaWNvbnMvbGlua2VkaW4uc3ZnICAgICAgICAgICAgICAgICAgICAgKgoqICAgUFVSUE9TRSA6IFNWRyBBU1NFVDogTElOS0VESU4gICAgICAgICAgICAgICAgICAgICAgICAgICAqCiogICBBVVRIT1IgIDogWWVyYXkgTG9pcyBTYW5jaGV6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICoKKiAgIEVNQUlMICAgOiB5ZXJheWxvaXNzYW5jaGV6QGdtYWlsLmNvbSAgICAgICAgICAgICAgICAgICAgKgoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqCi0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9IiMwQTY2QzIiPjxwYXRoIGQ9Ik0yMC41IDJoLTE3QTEuNSAxLjUgMCAwMDIgMy41djE3QTEuNSAxLjUgMCAwMDMuNSAyMmgxN2ExLjUgMS41IDAgMDAxLjUtMS41di0xN0ExLjUgMS41IDAgMDAyMC41IDJ6TTggMTlINXYtOWgzek02LjUgOC4yNUExLjc1IDEuNzUgMCAxMTguMyA2LjVhMS43OCAxLjc4IDAgMDEtMS44IDEuNzV6TTE5IDE5aC0zdi00Ljc0YzAtMS40Mi0uNi0xLjkzLTEuMzgtMS45M0ExLjc0IDEuNzQgMCAwMDEzIDE0LjE5YS42Ni42NiAwIDAwMCAuMTRWMTloLTN2LTloMi45djEuM2EzLjExIDMuMTEgMCAwMTIuNy0xLjRjMS41NSAwIDMuMzYuODYgMy4zNiAzLjY2eiIvPjwvc3ZnPg=="/>
-  <text x="52" y="28" fill="#e6edf3" font-size="14" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">LinkedIn</text>
-  <text x="52" y="46" fill="#7d8590" font-size="11.5" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">Yeray Lois Sánchez</text>
-  <line x1="580" y1="16" x2="580" y2="40" stroke="#30363d" stroke-width="1"/>
-  <text x="600" y="32" fill="#7d8590" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Networking and jobs</text>
-  <image x="802" y="15" width="26" height="26" href="data:image/svg+xml;base64,PCEtLQoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqCiogICBQUk9KRUNUIDogWUVSQVlMT0lTIEdJVEhVQiBQUk9GSUxFICAgICAgICAgICAgICAgICAgICAgICoKKiAgIEZJTEUgICAgOiBhc3NldHMvaWNvbnMvbGluay5zdmcgICAgICAgICAgICAgICAgICAgICAgICAgKgoqICAgUFVSUE9TRSA6IFNWRyBBU1NFVDogTElOSyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAqCiogICBBVVRIT1IgIDogWWVyYXkgTG9pcyBTYW5jaGV6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICoKKiAgIEVNQUlMICAgOiB5ZXJheWxvaXNzYW5jaGV6QGdtYWlsLmNvbSAgICAgICAgICAgICAgICAgICAgKgoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqCi0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9ImN1cnJlbnRDb2xvciI+PHBhdGggZD0iTTMuNzUgMmgzLjVhLjc1Ljc1IDAgMCAxIDAgMS41aC0zLjVhLjI1LjI1IDAgMCAwLS4yNS4yNXY4LjVjMCAuMTM4LjExMi4yNS4yNS4yNWg4LjVhLjI1LjI1IDAgMCAwIC4yNS0uMjV2LTMuNWEuNzUuNzUgMCAwIDEgMS41IDB2My41QTEuNzUgMS43NSAwIDAgMSAxMi4yNSAxNGgtOC41QTEuNzUgMS43NSAwIDAgMSAyIDEyLjI1di04LjVDMiAyLjc4NCAyLjc4NCAyIDMuNzUgMlptNi44NTQtMWg0LjE0NmEuMjUuMjUgMCAwIDEgLjI1LjI1djQuMTQ2YS4yNS4yNSAwIDAgMS0uNDI3LjE3N0wxMy4wMyA0LjAzbC0zLjE0OCAzLjE0N2EuNzUuNzUgMCAxIDEtMS4wNi0xLjA2bDMuMTQ3LTMuMTQ4LTEuNTQzLTEuNTQzYS4yNS4yNSAwIDAgMSAuMTc3LS40MjdaIi8+PC9zdmc+"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="52" viewBox="0 0 840 52" role="img" aria-label="LinkedIn: Yeray Lois Sánchez — Networking and jobs">
+  <style>
+    .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+  </style>
+  <line x1="0" y1="1" x2="840" y2="1" stroke="#30363d"/>
+  <line x1="0" y1="1" x2="28" y2="1" stroke="#0a66c2" stroke-width="2"/>
+  <text class="mono" x="0" y="34" fill="#6e7681" font-size="10" letter-spacing="1">02</text>
+  <circle cx="43" cy="30" r="3.5" fill="#0a66c2"/>
+  <text class="sans" x="58" y="34" fill="#f0f6fc" font-size="13.5" font-weight="650">LinkedIn</text>
+  <text class="mono" x="178" y="34" fill="#8b949e" font-size="11.5">Yeray Lois Sánchez</text>
+  <text class="mono" x="790" y="34" fill="#6e7681" font-size="9.5" text-anchor="end" letter-spacing="0.65">NETWORKING AND JOBS</text>
+  <text class="sans" x="840" y="35" fill="#0a66c2" font-size="18" text-anchor="end">↗</text>
 </svg>

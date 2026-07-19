@@ -1,12 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="80" viewBox="0 0 840 80" role="img" aria-label="Project card: SE">
-  <defs>
-    <clipPath id="card"><rect width="840" height="80" rx="10"/></clipPath>
-  </defs>
-  <rect width="840" height="80" rx="10" fill="#ffffff" stroke="#d1d9e0" stroke-width="1"/>
-  <rect x="0" y="0" width="4" height="80" fill="#555555" clip-path="url(#card)"/>
-  <text x="20" y="33" fill="#1f2328" font-size="16" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">SE</text>
-  <text x="20" y="55" fill="#656d76" font-size="12.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Embedded systems and RT control</text>
-  <image x="752" y="28" width="22" height="22" href="data:image/svg+xml;base64,PCEtLQoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqCiogICBQUk9KRUNUIDogWUVSQVlMT0lTIEdJVEhVQiBQUk9GSUxFICAgICAgICAgICAgICAgICAgICAgICoKKiAgIEZJTEUgICAgOiBhc3NldHMvaWNvbnMvZGV2aWNvbi9jLnN2ZyAgICAgICAgICAgICAgICAgICAgKgoqICAgUFVSUE9TRSA6IFNWRyBBU1NFVDogQyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAqCiogICBBVVRIT1IgIDogWWVyYXkgTG9pcyBTYW5jaGV6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICoKKiAgIEVNQUlMICAgOiB5ZXJheWxvaXNzYW5jaGV6QGdtYWlsLmNvbSAgICAgICAgICAgICAgICAgICAgKgoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqCi0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEyOCAxMjgiPjxwYXRoIGZpbGw9IiNhOWJhY2QiIGQ9Ik0xMjUgNTBjLTQtMzItMjQtNTAtNjItNTBDMjkgMCAzIDI0IDMgNjRjMCAzOSAyNCA2NCA2NCA2NCAzMiAwIDU1LTE5IDU4LTUwSDg3Yy0yIDExLTggMjAtMjAgMjAtMjEgMC0yNC0xNi0yNC0zMyAwLTIzIDgtMzUgMjItMzUgMTMgMCAyMCA3IDIyIDIweiIgLz48L3N2Zz4K"/>
-  <line x1="794" y1="26" x2="794" y2="54" stroke="#d1d9e0" stroke-width="1"/>
-  <image x="804" y="26" width="26" height="26" href="data:image/svg+xml;base64,PCEtLQoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqCiogICBQUk9KRUNUIDogWUVSQVlMT0lTIEdJVEhVQiBQUk9GSUxFICAgICAgICAgICAgICAgICAgICAgICoKKiAgIEZJTEUgICAgOiBhc3NldHMvaWNvbnMvcmVwby5zdmcgICAgICAgICAgICAgICAgICAgICAgICAgKgoqICAgUFVSUE9TRSA6IFNWRyBBU1NFVDogUkVQTyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAqCiogICBBVVRIT1IgIDogWWVyYXkgTG9pcyBTYW5jaGV6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICoKKiAgIEVNQUlMICAgOiB5ZXJheWxvaXNzYW5jaGV6QGdtYWlsLmNvbSAgICAgICAgICAgICAgICAgICAgKgoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqCi0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9ImN1cnJlbnRDb2xvciI+PHBhdGggZD0iTTIgMi41QTIuNSAyLjUgMCAwIDEgNC41IDBoOC43NWEuNzUuNzUgMCAwIDEgLjc1Ljc1djEyLjVhLjc1Ljc1IDAgMCAxLS43NS43NWgtMi41YS43NS43NSAwIDAgMSAwLTEuNWgxLjc1di0yaC04YTEgMSAwIDAgMC0uNzE0IDEuNy43NS43NSAwIDEgMS0xLjA3MiAxLjA1QTIuNDk1IDIuNDk1IDAgMCAxIDIgMTEuNVptMTAuNS0xaC04YTEgMSAwIDAgMC0xIDF2Ni43MDhBMi40ODYgMi40ODYgMCAwIDEgNC41IDloOFpNNSAxMi4yNWEuMjUuMjUgMCAwIDEgLjI1LS4yNWgzLjVhLjI1LjI1IDAgMCAxIC4yNS4yNXYzLjI1YS4yNS4yNSAwIDAgMS0uNC4ybC0xLjQ1LTEuMDg3YS4yNDkuMjQ5IDAgMCAwLS4zIDBMNS40IDE1LjdhLjI1LjI1IDAgMCAxLS40LS4yWiI+PC9wYXRoPjwvc3ZnPg=="/>
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="92" viewBox="0 0 840 92" role="img" aria-label="Project 02: SE — Embedded systems and RT control">
+  <style>
+    .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+  </style>
+  <line x1="0" y1="1" x2="840" y2="1" stroke="#d8dee4"/>
+  <line x1="0" y1="1" x2="48" y2="1" stroke="#5c6bc0" stroke-width="2"/>
+  <text class="mono" x="0" y="36" fill="#8c959f" font-size="11" letter-spacing="1.2">02</text>
+  <text class="sans" x="54" y="36" fill="#1f2328" font-size="21" font-weight="650">SE</text>
+  <text class="sans" x="54" y="65" fill="#59636e" font-size="13">Embedded systems and RT control</text>
+  <text class="mono" x="790" y="30" fill="#59636e" font-size="9.5" text-anchor="end" letter-spacing="0.65">C</text>
+  <text class="mono" x="790" y="64" fill="#8c959f" font-size="9" text-anchor="end" letter-spacing="0.9">VIEW REPOSITORY</text>
+  <text class="sans" x="840" y="65" fill="#5c6bc0" font-size="19" text-anchor="end">↗</text>
 </svg>

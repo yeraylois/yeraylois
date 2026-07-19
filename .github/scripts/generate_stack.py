@@ -3,7 +3,7 @@
 /*************************************************************
  *   PROJECT : YERAYLOIS GITHUB PROFILE                      *
  *   FILE    : .github/scripts/generate_stack.py             *
- *   PURPOSE : GENERATE SVG TECH STACK CARDS                 *
+ *   PURPOSE : GENERATE EDITORIAL TECH STACK INDEX           *
  *   AUTHOR  : Yeray Lois Sanchez                            *
  *   EMAIL   : yerayloissanchez@gmail.com                    *
  *************************************************************/
@@ -15,20 +15,17 @@ import base64
 import html
 import json
 import re
-import ssl
-import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = ROOT / "assets" / "stack"
-ICONS_DIR = ROOT / "assets" / "icons" / "devicon"
+ICONS_DIR = ROOT / "assets" / "icons" / "catalog"
 TECH_YAML = ROOT / "assets" / "tech_icons.yml"
 STACK_DATA = ROOT / "assets" / "stack" / "recent.json"
 
 WIDTH = 840
-HEIGHT = 140
-ICON_SIZE = 34
-ICON_GAP = 8
+HEIGHT = 128
+ICON_SIZE = 26
 
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 PROJECT = "YERAYLOIS GITHUB PROFILE"
@@ -176,11 +173,22 @@ def load_tech_icons() -> tuple[dict[str, str], str]:
         return {}, ""
 
 
+def is_badge_svg(svg_text: str) -> bool:
+    """Reject horizontal Shields badges masquerading as square tech icons."""
+    normalized = svg_text.lower()
+    return (
+        'shape-rendering="crispedges"' in normalized
+        and "textlength=" in normalized
+    )
+
+
 def embed_local_icon(rel_path: str, fill_color: str | None = None) -> str:
     icon_path = ROOT / rel_path
     if not icon_path.exists():
         return ""
     svg_text = icon_path.read_text(encoding="utf-8")
+    if is_badge_svg(svg_text):
+        return ""
     # Embedded SVGs render more reliably without XML prologs or leading comments.
     svg_text = re.sub(r"^\s*<\?xml[^>]*>\s*", "", svg_text)
     svg_text = re.sub(r"^\s*<!--.*?-->\s*", "", svg_text, flags=re.DOTALL)
@@ -191,50 +199,17 @@ def embed_local_icon(rel_path: str, fill_color: str | None = None) -> str:
     return f"data:image/svg+xml;base64,{data}"
 
 
-def fetch_and_cache_icon(tech_name: str, url: str) -> str:
-    if not url:
-        return ""
-    safe_name = tech_name.lower().replace(" ", "").replace("/", "").replace("\\", "")
-    local_path = ICONS_DIR / f"{safe_name}.svg"
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        context = None
-        try:
-            import certifi
-
-            context = ssl.create_default_context(cafile=certifi.where())
-        except Exception:
-            context = None
-
-        with urllib.request.urlopen(req, timeout=15, context=context) as resp:
-            data = resp.read()
-        ICONS_DIR.mkdir(parents=True, exist_ok=True)
-        local_path.write_bytes(data)
-        b64 = base64.b64encode(data).decode()
-        if ".svg" in url.lower():
-            return f"data:image/svg+xml;base64,{b64}"
-        return f"data:image/png;base64,{b64}"
-    except Exception:
-        return ""
-
-
 def get_icon_base64(tech_name: str, icons_map: dict[str, str]) -> str:
     tech_lower = tech_name.lower()
-    local_path = f"assets/icons/devicon/{tech_lower}.svg"
-    href = embed_local_icon(local_path)
-    if href:
-        return href
-    url = icons_map.get(tech_name, "")
-    if not url:
-        for key, u in icons_map.items():
+    icon_path = icons_map.get(tech_name, "")
+    if not icon_path:
+        for key, path in icons_map.items():
             if key.lower() == tech_lower:
-                url = u
+                icon_path = path
                 break
-    if url:
-        href = fetch_and_cache_icon(tech_name, url)
-        if href:
-            return href
-    return ""
+    if not icon_path or icon_path.startswith(("http://", "https://")):
+        return ""
+    return embed_local_icon(icon_path.removeprefix("./"))
 
 
 def build_icon_element(tech: str, x: int, y: int, size: int, icons_map: dict[str, str]) -> str:
@@ -242,123 +217,89 @@ def build_icon_element(tech: str, x: int, y: int, size: int, icons_map: dict[str
     if href:
         return f'<image x="{x}" y="{y}" width="{size}" height="{size}" href="{href}"/>'
     color = TECH_COLORS.get(tech.lower(), "#8b949e")
-    initial = html.escape(tech[:1].upper())
     cx = x + size // 2
     cy = y + size // 2
     r = size // 2
+    node_r = max(2, size // 12)
     return (
         f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{color}"/>'
-        f'<text x="{cx}" y="{cy + 4}" fill="#ffffff" font-size="{size // 2 + 2}" '
-        f'font-weight="700" font-family="{FONT}" text-anchor="middle">{initial}</text>'
+        f'<path d="M{cx - 8} {cy + 6}L{cx} {cy - 7}L{cx + 8} {cy + 6}Z" '
+        f'fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>'
+        f'<circle cx="{cx - 8}" cy="{cy + 6}" r="{node_r}" fill="#ffffff"/>'
+        f'<circle cx="{cx}" cy="{cy - 7}" r="{node_r}" fill="#ffffff"/>'
+        f'<circle cx="{cx + 8}" cy="{cy + 6}" r="{node_r}" fill="#ffffff"/>'
     )
 
 
-def build_icons_group(techs: list[str], icons_map: dict[str, str], center_x: int, y0: int) -> str:
+def build_ledger_items(
+    techs: list[str],
+    icons_map: dict[str, str],
+    row_y: int,
+    start_x: int,
+) -> str:
+    if not techs:
+        return ""
+
+    slot_width = (WIDTH - start_x) / len(techs)
     parts = []
-    total_width = len(techs) * ICON_SIZE + (len(techs) - 1) * ICON_GAP
-    x = center_x - total_width // 2
-    for i, tech in enumerate(techs):
-        icon_svg = build_icon_element(tech, x, y0, ICON_SIZE, icons_map)
-        if icon_svg:
-            parts.append(
-                f'<g opacity="0">'
-                f'<animate attributeName="opacity" values="0;1" dur="0.4s" begin="{i * 0.15}s" fill="freeze"/>'
-                f'{icon_svg}'
-                f'</g>'
-            )
-        x += ICON_SIZE + ICON_GAP
+    for index, tech in enumerate(techs):
+        item_x = int(start_x + index * slot_width)
+        icon = build_icon_element(tech, item_x, row_y + 17, ICON_SIZE, icons_map)
+        label = html.escape(tech.upper())
+        font_size = "8.5" if len(tech) > 10 else "9.5"
+        parts.append(
+            f'<g>{icon}'
+            f'<text x="{item_x + 34}" y="{row_y + 35}" fill="currentColor" '
+            f'font-size="{font_size}" font-family="{FONT}" font-weight="600" '
+            f'letter-spacing="0.55">{label}</text></g>'
+        )
     return "".join(parts)
 
 
-def build_half(center_x: int, label: str, icon_href: str, techs: list[str], icons_map: dict[str, str], theme: str) -> str:
+def build_ledger_row(
+    number: str,
+    label: str,
+    note: str,
+    techs: list[str],
+    icons_map: dict[str, str],
+    theme: str,
+    row_y: int,
+    start_x: int,
+) -> str:
     t = THEMES[theme]
-    label_text = html.escape(label)
-    border = t["border"]
-    accent = t["accent"]
-    text1 = t["text1"]
-
-    icon_size = 20
-    icon_y = 18
-    icon_img = ""
-    if icon_href:
-        icon_x = center_x - 70
-        icon_img = f'<image x="{icon_x}" y="{icon_y}" width="{icon_size}" height="{icon_size}" href="{icon_href}"/>'
-
-    label_svg = (
-        f'<text x="{center_x}" y="36" fill="{text1}" '
-        f'font-size="18" font-weight="700" font-family="{FONT}" text-anchor="middle">{label_text}</text>'
+    items = build_ledger_items(techs, icons_map, row_y, start_x)
+    return (
+        f'<g color="{t["text2"]}">'
+        f'<line x1="0" y1="{row_y + 1}" x2="{WIDTH}" y2="{row_y + 1}" stroke="{t["border"]}"/>'
+        f'<line x1="0" y1="{row_y + 1}" x2="48" y2="{row_y + 1}" stroke="{t["accent"]}" stroke-width="2"/>'
+        f'<text x="0" y="{row_y + 36}" fill="{t["text2"]}" font-size="10" '
+        f'font-family="{FONT}" letter-spacing="1.1">{number}</text>'
+        f'<text x="42" y="{row_y + 30}" fill="{t["text1"]}" font-size="14" '
+        f'font-family="{FONT}" font-weight="650">{html.escape(label)}</text>'
+        f'<text x="42" y="{row_y + 47}" fill="{t["text2"]}" font-size="8" '
+        f'font-family="{FONT}" letter-spacing="0.8">{html.escape(note)}</text>'
+        f'{items}</g>'
     )
-
-    num_icons = len(techs)
-    total_icons_width = num_icons * ICON_SIZE + (num_icons - 1) * ICON_GAP
-    half_len = total_icons_width / 2
-    line_y = 52
-    line_svg = (
-        f'<line x1="{center_x - half_len}" y1="{line_y}" x2="{center_x + half_len}" y2="{line_y}" '
-        f'stroke="{accent}" stroke-width="1.5" stroke-linecap="round"/>'
-        f'<line x1="{center_x - half_len}" y1="{line_y - 3}" x2="{center_x - half_len}" y2="{line_y + 3}" '
-        f'stroke="{accent}" stroke-width="1.5" stroke-linecap="round"/>'
-        f'<line x1="{center_x + half_len}" y1="{line_y - 3}" x2="{center_x + half_len}" y2="{line_y + 3}" '
-        f'stroke="{accent}" stroke-width="1.5" stroke-linecap="round"/>'
-    )
-
-    icons_svg = build_icons_group(techs, icons_map, center_x, 68)
-
-    return icon_img + label_svg + line_svg + icons_svg
 
 
 def build_svg(recent: list[str], loved: list[str], icons_map: dict[str, str], theme: str, lang: str = "es") -> str:
-    t = THEMES[theme]
-    bg = t["bg"]
-    border = t["border"]
-    accent = t["accent"]
-
-    recent_label_es = "𝐑𝐄𝐂𝐈𝐄𝐍𝐓𝐄"
-    recent_label_en = "𝐑𝐄𝐂𝐄𝐍𝐓"
-    loved_label_es = "𝐓𝐎𝐏"
-    loved_label_en = "𝐋𝐎𝐕𝐄𝐃"
-
-    recent_label = recent_label_es if lang == "es" else recent_label_en
-    loved_label = loved_label_es if lang == "es" else loved_label_en
+    recent_label = "EN USO" if lang == "es" else "IN USE"
+    recent_note = "ACTIVIDAD RECIENTE" if lang == "es" else "RECENT ACTIVITY"
+    loved_label = "BASE" if lang == "es" else "CORE"
+    loved_note = "SIEMPRE A MANO" if lang == "es" else "ALWAYS CLOSE"
     rel_path = f"assets/stack/stack-{theme}-{lang}.svg"
     purpose = f"TECH STACK SVG ({theme.upper()}/{lang.upper()})"
     banner = build_svg_banner(rel_path, purpose)
-
-    clip_id = "card-clip"
-    defs = (
-        f'<clipPath id="{clip_id}"><rect width="{WIDTH}" height="{HEIGHT}" rx="10"/></clipPath>'
+    recent_row = build_ledger_row(
+        "01", recent_label, recent_note, recent, icons_map, theme, 0, 205
     )
-
-    card_bg = (
-        f'<rect width="{WIDTH}" height="{HEIGHT}" rx="10" '
-        f'fill="{bg}" stroke="{border}" stroke-width="1"/>'
+    loved_row = build_ledger_row(
+        "02", loved_label, loved_note, loved, icons_map, theme, 64, 520
     )
-
-    left_bar = (
-        f'<rect x="0" y="0" width="4" height="{HEIGHT}" fill="{accent}" clip-path="url(#{clip_id})"/>'
-    )
-
-    divider = (
-        f'<line x1="{WIDTH // 2}" y1="20" x2="{WIDTH // 2}" y2="{HEIGHT - 20}" '
-        f'stroke="{border}" stroke-width="1"/>'
-    )
-
-    text1 = t["text1"]
-    clock_href = embed_local_icon("assets/icons/clock.svg", fill_color=text1)
-    heart_href = embed_local_icon("assets/icons/heart.svg", fill_color=text1)
-
-    left = build_half(210, recent_label, clock_href, recent, icons_map, theme)
-    right = build_half(630, loved_label, heart_href, loved, icons_map, theme)
 
     return banner + f"""<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-label="Tech Stack">
-  <defs>
-    {defs}
-  </defs>
-  {card_bg}
-  {left_bar}
-  {divider}
-  {left}
-  {right}
+  {recent_row}
+  {loved_row}
 </svg>
 """
 

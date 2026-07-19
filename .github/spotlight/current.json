@@ -1,11 +1,12 @@
 {
-  "generated_at": "2026-07-13T06:28:28.666738+00:00",
+  "generated_at": "2026-07-19T10:07:23.961007+00:00",
   "iso_week": 29,
   "index": 3,
   "project": {
     "id": "zephyr_t114_validator",
     "name": "Zephyr: Heltec Mesh Node T114 Board & Validator",
-    "description": "Board support PR for Heltec Mesh Node T114 with interactive validator sample testing display, buttons and hardware.",
+    "description_es": "Soporte de placa para Heltec Mesh Node T114 y muestra interactiva para validar pantalla, botones y hardware.",
+    "description_en": "Board support PR for Heltec Mesh Node T114 with interactive validator sample testing display, buttons and hardware.",
     "tech": [
       {
         "id": "c",

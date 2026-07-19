@@ -1,18 +1,8 @@
-#
-# /*************************************************************
-# *   PROJECT : YERAYLOIS GITHUB PROFILE                      *
-# *   FILE    : .github/workflows/update-stack.yml            *
-# *   PURPOSE : DAILY AUTO-UPDATE OF DYNAMIC TECH STACK       *
-# *   AUTHOR  : Yeray Lois Sanchez                            *
-# *   EMAIL   : yerayloissanchez@gmail.com                    *
-# *************************************************************/
-#
-
 name: Update Dynamic Tech Stack
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "17 3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -20,53 +10,62 @@ permissions:
   issues: write
 
 concurrency:
-  group: update-stack
+  group: update-stack-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   update-stack:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v6
         with:
-          python-version: "3.12"
+          python-version: "3.13"
 
       - name: Install dependencies
-        run: |
-          pip install pyyaml certifi
+        run: python -m pip install --disable-pip-version-check pyyaml==6.0.2
 
-      - name: Run stack updater
+      - name: Test stack updater and local icon catalog
+        working-directory: .github/scripts
+        run: python -m unittest -v test_update_stack.py test_generate_stack.py
+
+      - name: Update stack from owned repositories
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Prefer a fine-grained read-only token. SNAKE_TOKEN remains a
+          # backwards-compatible fallback for the existing repository setup.
+          STACK_REPOS_TOKEN: ${{ secrets.STACK_REPOS_TOKEN || secrets.SNAKE_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
           GITHUB_REPO: ${{ github.event.repository.name }}
-        run: |
-          python .github/scripts/update_stack.py
+        run: python .github/scripts/update_stack.py
 
       - name: Generate stack SVGs
-        run: |
-          python .github/scripts/generate_stack.py
+        run: python .github/scripts/generate_stack.py
 
-      - name: Check for changes
-        id: check_changes
+      - name: Validate generated SVGs
         run: |
-          if git diff --quiet; then
+          python -c 'import xml.etree.ElementTree as ET; from pathlib import Path; [ET.parse(path) for path in Path("assets/stack").glob("*.svg")]'
+          git diff --check
+
+      - name: Check for generated changes
+        id: changes
+        run: |
+          if git diff --quiet -- assets/stack/; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No changes detected"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "Changes detected"
           fi
 
-      - name: Commit and push changes
-        if: steps.check_changes.outputs.changed == 'true'
+      - name: Commit and push generated stack
+        if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/stack/ assets/icons/devicon/ .github/scripts/update_stack.py .github/scripts/generate_stack.py
-          git commit -m "chore(stack): update dynamic tech stack [skip ci]"
+          git add -- assets/stack/recent.json assets/stack/stack-*.svg
+          git commit -m "chore(stack): refresh recent technologies [skip ci]"
           git push

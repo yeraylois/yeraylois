@@ -15,9 +15,11 @@ import sys
 import json
 import yaml
 import urllib.request
+import urllib.parse
 from datetime import datetime, timezone
 from pathlib import Path
 
+STACK_TOKEN = os.environ.get("STACK_REPOS_TOKEN", "")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 USERNAME = os.environ.get("GITHUB_USERNAME", "yeraylois")
 REPO_NAME = os.environ.get("GITHUB_REPO", "yeraylois")
@@ -160,7 +162,7 @@ FRAMEWORK_PATTERNS = {
     "Airflow": [r"airflow", r"apache.?airflow"],
     
     # TOOLS / OS
-    "Git": [r"git"],
+    "Git": [r"\bgit\b"],
     "Bash": [r"bash", r"shell.?script"],
     "Zsh": [r"zsh"],
     "Vim": [r"vim"],
@@ -172,7 +174,7 @@ FRAMEWORK_PATTERNS = {
     "Linux": [r"linux"],
     "Ubuntu": [r"ubuntu"],
     "Debian": [r"debian"],
-    "Arch": [r"arch", r"arch.?linux"],
+    "Arch": [r"\barch(?:.?linux)?\b"],
     "Fedora": [r"fedora"],
     "Alpine": [r"alpine"],
     "Tmux": [r"tmux"],
@@ -249,22 +251,43 @@ FRAMEWORK_PATTERNS = {
 }
 
 
-def api_request(url):
+def api_request(url, token=""):
     req = urllib.request.Request(url)
-    if GITHUB_TOKEN:
-        req.add_header("Authorization", f"token {GITHUB_TOKEN}")
-    req.add_header("Accept", "application/vnd.github.v3+json")
+    if token:
+        req.add_header("Authorization", f"Bearer {token}")
+    req.add_header("Accept", "application/vnd.github+json")
+    req.add_header("X-GitHub-Api-Version", "2022-11-28")
     req.add_header("User-Agent", "yeraylois-profile-stack-updater")
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.loads(resp.read().decode())
 
 
-def fetch_all_repos():
+def is_eligible_repo(repo):
+    """Keep only active repositories owned by the profile account."""
+    owner = (repo.get("owner") or {}).get("login", "")
+    name = repo.get("name", "")
+    return all([
+        owner.casefold() == USERNAME.casefold(),
+        name.casefold() != USERNAME.casefold(),
+        not repo.get("fork", False),
+        not repo.get("archived", False),
+        not repo.get("disabled", False),
+    ])
+
+
+def fetch_repo_pages(endpoint, common_params, token=""):
     repos = []
     page = 1
     while True:
-        url = f"https://api.github.com/users/{USERNAME}/repos?per_page=100&page={page}&sort=pushed&direction=desc"
-        data = api_request(url)
+        params = {
+            **common_params,
+            "per_page": 100,
+            "page": page,
+            "sort": "pushed",
+            "direction": "desc",
+        }
+        url = f"{endpoint}?{urllib.parse.urlencode(params)}"
+        data = api_request(url, token)
         if not data:
             break
         repos.extend(data)
@@ -272,6 +295,39 @@ def fetch_all_repos():
             break
         page += 1
     return repos
+
+
+def fetch_all_repos():
+    """Merge public and token-visible owned repositories, then apply filters."""
+    public_repos = fetch_repo_pages(
+        f"https://api.github.com/users/{USERNAME}/repos",
+        {"type": "owner"},
+    )
+    authenticated_repos = []
+    if STACK_TOKEN:
+        authenticated_repos = fetch_repo_pages(
+            "https://api.github.com/user/repos",
+            {"visibility": "all", "affiliation": "owner"},
+            STACK_TOKEN,
+        )
+
+    merged = {}
+    for repo in [*public_repos, *authenticated_repos]:
+        key = repo.get("id") or repo.get("full_name") or repo.get("name")
+        merged[key] = repo
+
+    eligible = [repo for repo in merged.values() if is_eligible_repo(repo)]
+    excluded = len(merged) - len(eligible)
+    private_count = sum(repo.get("private", False) for repo in eligible)
+    if private_count:
+        source = "merged public/private repositories"
+    elif STACK_TOKEN:
+        source = "public repositories (configured token exposed no private repositories)"
+    else:
+        source = "public repositories (STACK_REPOS_TOKEN is not configured)"
+    print(f"Repository source: {source}")
+    print(f"Eligible owned repositories: {len(eligible)} ({excluded} excluded)")
+    return eligible
 
 
 def detect_frameworks(repo):
@@ -300,8 +356,8 @@ def load_tech_icons():
 def get_recent_stack(repos, limit=6):
     """
     Returns list of (tech_name, last_push_date) ordered by recency.
-    Priority: frameworks > languages.
-    Most recent first (left side in the visual).
+    Most recently pushed technology first (left side in the visual).
+    Frameworks only win ties against a repository's primary language.
     """
     tech_entries = []  # LIST OF (tech_name, datetime, is_framework) FOR SORTING
     
@@ -321,9 +377,7 @@ def get_recent_stack(repos, limit=6):
         if lang and lang != "null":
             tech_entries.append((lang, dt, False))
     
-    # SORT BY: IS_FRAMEWORK DESC, THEN DATETIME DESC
-    # THIS ENSURES FRAMEWORKS APPEAR BEFORE LANGUAGES AT SAME TIMESTAMP
-    tech_entries.sort(key=lambda x: (x[2], x[1]), reverse=True)
+    tech_entries.sort(key=lambda x: (x[1], x[2]), reverse=True)
     
     # DEDUPLICATE, KEEPING MOST RECENT ENTRY FOR EACH TECH
     seen = set()
@@ -389,7 +443,9 @@ def main():
 
     print("\nFetching repositories...")
     repos = fetch_all_repos()
-    print(f"Found {len(repos)} repositories")
+    private_count = sum(repo.get("private", False) for repo in repos)
+    public_count = len(repos) - private_count
+    print(f"Found {public_count} public and {private_count} private eligible repositories")
     
 
     recent_stack = get_recent_stack(repos, limit=6)
@@ -415,9 +471,13 @@ def main():
         "recent": [tech for tech, _ in recent_stack],
         "loved": loved_techs,
         "updated_at": datetime.now(timezone.utc).isoformat(),
+        "repository_scope": "public-private" if private_count else "public",
+        "repositories_scanned": len(repos),
+        "private_repositories_scanned": private_count,
     }
     with open(STACK_JSON, "w") as f:
         json.dump(stack_data, f, indent=2)
+        f.write("\n")
 
     print("\n✅ Stack data saved successfully!")
     print(f"   Recent stack: {len(stack_data['recent'])} technologies")
