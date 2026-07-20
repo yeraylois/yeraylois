@@ -1,44 +1,5 @@
 [
   {
-    "id": "mytodoapp",
-    "name": "myTodoApp",
-    "description_es": "Aplicación Android de tareas con persistencia local SQLite y funcionamiento offline-first.",
-    "description_en": "Android to-do app with local SQLite persistence and offline-first flow.",
-    "tech": [
-      { "id": "ionic", "label": "Ionic" },
-      { "id": "android", "label": "Android" },
-      { "id": "sqlite", "label": "SQLite" }
-    ],
-    "repo": "https://github.com/yeraylois/myTodoApp"
-  },
-  {
-    "id": "aii_2025_tt",
-    "name": "AII_2025_TT",
-    "description_es": "Automatización de infraestructura y observabilidad con IaC y monitorización.",
-    "description_en": "Infrastructure automation and observability stack with IaC and monitoring.",
-    "tech": [
-      { "id": "ansible", "label": "Ansible" },
-      { "id": "docker", "label": "Docker" },
-      { "id": "python", "label": "Python" },
-      { "id": "angular", "label": "Angular" },
-      { "id": "prometheus", "label": "Prometheus" },
-      { "id": "grafana", "label": "Grafana" }
-    ],
-    "repo": "https://github.com/yeraylois/AII_2025_TT"
-  },
-  {
-    "id": "se_tt2",
-    "name": "SE (TraballoTutelado-2)",
-    "description_es": "Proyecto de sistemas embebidos centrado en firmware y control en tiempo real.",
-    "description_en": "Embedded systems project focused on firmware and real-time control.",
-    "tech": [
-      { "id": "c", "label": "C" },
-      { "id": "microchip", "label": "Microcontrollers" },
-      { "id": "embedded", "label": "Embedded Systems" }
-    ],
-    "repo": "https://github.com/yeraylois/SE/tree/TraballoTutelado-2"
-  },
-  {
     "id": "zephyr_t114_validator",
     "name": "Zephyr: Heltec Mesh Node T114 Board & Validator",
     "description_es": "Soporte de placa para Heltec Mesh Node T114 y muestra interactiva para validar pantalla, botones y hardware.",
