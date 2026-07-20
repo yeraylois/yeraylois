@@ -3,7 +3,7 @@
   <line x1="0" y1="1" x2="64" y2="1" stroke="#5c6bc0" stroke-width="2"/>
   <line x1="102" y1="20" x2="102" y2="132" stroke="#30363d"/>
 
-  <text x="0" y="48" fill="#f0f6fc" font-size="25" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-weight="650">W29</text>
+  <text x="0" y="48" fill="#f0f6fc" font-size="25" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-weight="650">W30</text>
   <text x="0" y="69" fill="#6e7681" font-size="8" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" letter-spacing="0.8">CURRENT PICK</text>
 
   <text x="132" y="49" fill="#f0f6fc" font-size="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-weight="650">Zephyr: Heltec Mesh Node T114 Board &amp; Validator</text>
