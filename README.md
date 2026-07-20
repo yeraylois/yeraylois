@@ -62,11 +62,13 @@ Graduado en Ingeniería Informática por la UDC (2021-2025), enfocado en sistema
 #### 𝐏𝐑𝐎𝐘𝐄𝐂𝐓𝐎 𝐒𝐄𝐌𝐀𝐍𝐀𝐋
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark-es.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light-es.svg" />
-    <img src="./assets/spotlight/current-dark-es.svg" alt="Proyecto semanal destacado" width="100%" />
-  </picture>
+  <a href="https://github.com/yeraylois/zephyr">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark-es.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light-es.svg" />
+      <img src="./assets/spotlight/current-dark-es.svg" alt="Proyecto semanal destacado" width="100%" />
+    </picture>
+  </a>
 </p>
 
 #### 𝐒𝐍𝐀𝐊𝐄 𝐃𝐄 𝐂𝐎𝐍𝐓𝐑𝐈𝐁𝐔𝐂𝐈𝐎𝐍𝐄𝐒
@@ -90,22 +92,6 @@ Graduado en Ingeniería Informática por la UDC (2021-2025), enfocado en sistema
 #### 𝐏𝐑𝐎𝐘𝐄𝐂𝐓𝐎𝐒 𝐃𝐄𝐒𝐓𝐀𝐂𝐀𝐃𝐎𝐒
 
 <p align="center">
-  <a href="https://github.com/yeraylois/AII_2025_TT">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/project-aii_2025_tt-dark-es.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/project-aii_2025_tt-light-es.svg" />
-      <img src="./assets/cards/project-aii_2025_tt-dark-es.svg" alt="AII_2025_TT" width="100%" />
-    </picture>
-  </a>
-  <br/>
-  <a href="https://github.com/yeraylois/SE/tree/TraballoTutelado-2">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/project-se_tt2-dark-es.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/project-se_tt2-light-es.svg" />
-      <img src="./assets/cards/project-se_tt2-dark-es.svg" alt="SE" width="100%" />
-    </picture>
-  </a>
-  <br/>
   <a href="https://github.com/yeraylois/zephyr">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/project-zephyr_t114-dark-es.svg" />
@@ -175,11 +161,13 @@ Computer Engineering graduate from UDC (2021-2025), focused on embedded systems,
 #### 𝐖𝐄𝐄𝐊𝐋𝐘 𝐏𝐑𝐎𝐉𝐄𝐂𝐓 𝐒𝐏𝐎𝐓𝐋𝐈𝐆𝐇𝐓
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark-en.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light-en.svg" />
-    <img src="./assets/spotlight/current-dark-en.svg" alt="Weekly project spotlight" width="100%" />
-  </picture>
+  <a href="https://github.com/yeraylois/zephyr">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark-en.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light-en.svg" />
+      <img src="./assets/spotlight/current-dark-en.svg" alt="Weekly project spotlight" width="100%" />
+    </picture>
+  </a>
 </p>
 
 #### 𝐂𝐎𝐍𝐓𝐑𝐈𝐁𝐔𝐓𝐈𝐎𝐍 𝐒𝐍𝐀𝐊𝐄
