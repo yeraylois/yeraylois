@@ -1,0 +1,23 @@
+name: Pinned Featured Project Reminder
+
+on:
+  schedule:
+    - cron: "40 14 27 7 *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open reminder issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --repo "${{ github.repository }}" \
+            --title "Revisit pinned featured project card" \
+            --assignee yeraylois \
+            --body "On 2026-07-20 the Featured Projects section in README.md switched from rotating to two static pins (zephyr_t114 and zephyr_lvgl_upstream, defined in .github/cards/projects.json). Decide whether to keep them pinned or switch back to rotation."
