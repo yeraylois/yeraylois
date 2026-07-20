@@ -99,6 +99,14 @@ Graduado en Ingeniería Informática por la UDC (2021-2025), enfocado en sistema
       <img src="./assets/cards/project-zephyr_t114-dark-es.svg" alt="Zephyr T114" width="100%" />
     </picture>
   </a>
+  <br/>
+  <a href="https://github.com/zephyrproject-rtos/zephyr/pull/108610">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/project-zephyr_lvgl_upstream-dark-es.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/project-zephyr_lvgl_upstream-light-es.svg" />
+      <img src="./assets/cards/project-zephyr_lvgl_upstream-dark-es.svg" alt="LVGL RGB565X Swap (Zephyr)" width="100%" />
+    </picture>
+  </a>
 </p>
 
 #### 𝐂𝐎𝐍𝐓𝐀𝐂𝐓𝐎
@@ -191,27 +199,19 @@ Computer Engineering graduate from UDC (2021-2025), focused on embedded systems,
 #### 𝐅𝐄𝐀𝐓𝐔𝐑𝐄𝐃 𝐏𝐑𝐎𝐉𝐄𝐂𝐓𝐒
 
 <p align="center">
-  <a href="https://github.com/yeraylois/AII_2025_TT">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/project-aii_2025_tt-dark-en.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/project-aii_2025_tt-light-en.svg" />
-      <img src="./assets/cards/project-aii_2025_tt-dark-en.svg" alt="AII_2025_TT" width="100%" />
-    </picture>
-  </a>
-  <br/>
-  <a href="https://github.com/yeraylois/SE/tree/TraballoTutelado-2">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/project-se_tt2-dark-en.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/project-se_tt2-light-en.svg" />
-      <img src="./assets/cards/project-se_tt2-dark-en.svg" alt="SE" width="100%" />
-    </picture>
-  </a>
-  <br/>
   <a href="https://github.com/yeraylois/zephyr">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/project-zephyr_t114-dark-en.svg" />
       <source media="(prefers-color-scheme: light)" srcset="./assets/cards/project-zephyr_t114-light-en.svg" />
       <img src="./assets/cards/project-zephyr_t114-dark-en.svg" alt="Zephyr T114" width="100%" />
+    </picture>
+  </a>
+  <br/>
+  <a href="https://github.com/zephyrproject-rtos/zephyr/pull/108610">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/project-zephyr_lvgl_upstream-dark-en.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/project-zephyr_lvgl_upstream-light-en.svg" />
+      <img src="./assets/cards/project-zephyr_lvgl_upstream-dark-en.svg" alt="LVGL RGB565X Swap (Zephyr)" width="100%" />
     </picture>
   </a>
 </p>
