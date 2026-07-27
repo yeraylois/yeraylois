@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-20T06:32:06.276685+00:00",
-  "iso_week": 30,
-  "index": 3,
+  "generated_at": "2026-07-27T06:48:37.626584+00:00",
+  "iso_week": 31,
+  "index": 0,
   "project": {
     "id": "zephyr_t114_validator",
     "name": "Zephyr: Heltec Mesh Node T114 Board & Validator",
