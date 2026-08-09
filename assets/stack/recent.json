@@ -2,8 +2,8 @@
   "recent": [
     "Shell",
     "MQTT",
-    "LoRa",
     "Qt",
+    "LoRa",
     "Python",
     "JavaScript"
   ],
@@ -12,7 +12,7 @@
     "C",
     "Git"
   ],
-  "updated_at": "2026-08-08T04:28:31.720625+00:00",
+  "updated_at": "2026-08-09T04:37:12.434698+00:00",
   "repository_scope": "public-private",
   "repositories_scanned": 31,
   "private_repositories_scanned": 31
