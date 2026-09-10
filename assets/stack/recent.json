@@ -1,19 +1,19 @@
 {
   "recent": [
+    "Zephyr",
     "Shell",
-    "Qt",
     "MQTT",
     "LoRa",
-    "Python",
-    "JavaScript"
+    "Qt",
+    "Python"
   ],
   "loved": [
     "Bash",
     "C",
     "Git"
   ],
-  "updated_at": "2026-09-09T08:09:52.093675+00:00",
+  "updated_at": "2026-09-10T08:09:26.451878+00:00",
   "repository_scope": "public-private",
-  "repositories_scanned": 31,
-  "private_repositories_scanned": 31
+  "repositories_scanned": 32,
+  "private_repositories_scanned": 32
 }
