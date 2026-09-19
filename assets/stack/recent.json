@@ -3,8 +3,8 @@
     "Zephyr",
     "Shell",
     "MQTT",
-    "LoRa",
     "Qt",
+    "LoRa",
     "Python"
   ],
   "loved": [
@@ -12,7 +12,7 @@
     "C",
     "Git"
   ],
-  "updated_at": "2026-09-18T08:15:48.746146+00:00",
+  "updated_at": "2026-09-19T08:04:02.830058+00:00",
   "repository_scope": "public-private",
   "repositories_scanned": 32,
   "private_repositories_scanned": 32
