@@ -8,148 +8,24 @@
  *************************************************************/
 -->
 
-<h1 align="center">𝐘𝐞𝐫𝐚𝐲 𝐋𝐨𝐢𝐬 𝐒𝐚𝐧𝐜𝐡𝐞𝐳</h1>
-<p align="center"><strong>𝐂𝐨𝐦𝐩𝐮𝐭𝐞𝐫 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠 𝐆𝐫𝐚𝐝𝐮𝐚𝐭𝐞 (𝟐𝟎𝟐𝟏-𝟐𝟎𝟐𝟓) @ 𝐔𝐃𝐂 · 𝐇𝐀𝐑𝐃𝐖𝐀𝐑𝐄</strong></p>
-
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1400&center=true&vCenter=true&width=860&color=9BE9A8&lines=Embedded+Systems+%C2%B7+Automation+%C2%B7+Full-Stack;Building+reliable+developer+tooling+with+focus+on+execution" />
-    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1400&center=true&vCenter=true&width=860&color=36BCF7&lines=Embedded+Systems+%C2%B7+Automation+%C2%B7+Full-Stack;Building+reliable+developer+tooling+with+focus+on+execution" />
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1400&center=true&vCenter=true&width=860&color=36BCF7&lines=Embedded+Systems+%C2%B7+Automation+%C2%B7+Full-Stack;Building+reliable+developer+tooling+with+focus+on+execution" alt="Typing intro" />
-  </picture>
-</p>
-
-<p align="center">
-  <a href="mailto:yerayloissanchez@gmail.com"><img src="https://img.shields.io/badge/EMAIL-yerayloissanchez%40gmail.com-0A66C2?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/yeray-lois"><img src="https://img.shields.io/badge/LINKEDIN-yeraylois-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://github.com/yeraylois"><img src="https://img.shields.io/github/followers/yeraylois?label=FOLLOW&style=for-the-badge" alt="GitHub followers" /></a>
-</p>
-
-<p align="center">
-  <a href="#sobre-mi"><img src="https://img.shields.io/badge/IDIOMA-ESPA%C3%91OL-FF6A00?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Español"/></a>
-  <a href="#about-me"><img src="https://img.shields.io/badge/LANGUAGE-ENGLISH-0A66C2?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English"/></a>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/dividers/line-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/dividers/line-light.svg" />
-    <img src="./assets/dividers/line-dark.svg" alt="" width="100%" />
-  </picture>
-</p>
-
-<a id="espanol"></a>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🇪🇸-ESPAÑOL-FF6A00?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Español" />
-</p>
-
-<a id="sobre-mi"></a>
-
-#### 𝐒𝐎𝐁𝐑𝐄 𝐌𝐈
-
-Graduado en Ingeniería Informática por la UDC (2021-2025), enfocado en sistemas embebidos, automatización y desarrollo de herramientas orientadas a ejecución real.
-
-<h4 align="center">𝐌𝐄𝐓𝐑𝐈𝐂𝐀𝐒 𝐆𝐈𝐓𝐇𝐔𝐁</h4>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/metrics/base.svg" />
-    <img src="./assets/metrics/base.svg" alt="GitHub metrics base" />
-  </picture>
-</p>
-
-#### 𝐏𝐑𝐎𝐘𝐄𝐂𝐓𝐎 𝐒𝐄𝐌𝐀𝐍𝐀𝐋
-
-<p align="center">
-  <a href="https://github.com/yeraylois/zephyr">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark-es.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light-es.svg" />
-      <img src="./assets/spotlight/current-dark-es.svg" alt="Proyecto semanal destacado" width="100%" />
-    </picture>
-  </a>
-</p>
-
-#### 𝐒𝐍𝐀𝐊𝐄 𝐃𝐄 𝐂𝐎𝐍𝐓𝐑𝐈𝐁𝐔𝐂𝐈𝐎𝐍𝐄𝐒
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yeraylois/yeraylois/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yeraylois/yeraylois/output/github-contribution-grid-snake.svg" />
-  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/yeraylois/yeraylois/output/github-contribution-grid-snake.svg" width="100%" />
-</picture>
-
-#### 𝐒𝐓𝐀𝐂𝐊 𝐓𝐄𝐂𝐍𝐎𝐋𝐎𝐆𝐈𝐂𝐎
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/stack/stack-dark-es.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/stack/stack-light-es.svg" />
-    <img src="./assets/stack/stack-dark-es.svg" alt="Stack tecnológico" width="100%" />
-  </picture>
-</p>
-
-#### 𝐏𝐑𝐎𝐘𝐄𝐂𝐓𝐎𝐒 𝐃𝐄𝐒𝐓𝐀𝐂𝐀𝐃𝐎𝐒
-
-<p align="center">
-  <a href="https://github.com/yeraylois/zephyr">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/project-zephyr_t114-dark-es.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/project-zephyr_t114-light-es.svg" />
-      <img src="./assets/cards/project-zephyr_t114-dark-es.svg" alt="Zephyr T114" width="100%" />
-    </picture>
-  </a>
-  <br/>
-  <a href="https://github.com/zephyrproject-rtos/zephyr/pull/108610">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/project-zephyr_lvgl_upstream-dark-es.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/project-zephyr_lvgl_upstream-light-es.svg" />
-      <img src="./assets/cards/project-zephyr_lvgl_upstream-dark-es.svg" alt="LVGL RGB565X Swap (Zephyr)" width="100%" />
-    </picture>
-  </a>
-</p>
-
-#### 𝐂𝐎𝐍𝐓𝐀𝐂𝐓𝐎
-
-<p align="center">
-  <a href="mailto:yerayloissanchez@gmail.com">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/contact-email-dark-es.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/contact-email-light-es.svg" />
-      <img src="./assets/cards/contact-email-dark-es.svg" alt="Email" width="100%" />
-    </picture>
-  </a>
-  <br/>
-  <a href="https://www.linkedin.com/in/yeray-lois">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/contact-linkedin-dark-es.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/contact-linkedin-light-es.svg" />
-      <img src="./assets/cards/contact-linkedin-dark-es.svg" alt="LinkedIn" width="100%" />
-    </picture>
-  </a>
-  <br/>
-  <a href="https://github.com/yeraylois">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/contact-github-dark-es.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/contact-github-light-es.svg" />
-      <img src="./assets/cards/contact-github-dark-es.svg" alt="GitHub" width="100%" />
-    </picture>
-  </a>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/dividers/line-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/dividers/line-light.svg" />
-    <img src="./assets/dividers/line-dark.svg" alt="" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/header/header-dark-en.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/header/header-light-en.svg" />
+    <img src="./assets/header/header-dark-en.svg" alt="Yeray Lois Sanchez: embedded firmware, embedded | automation | tooling" width="100%" />
   </picture>
 </p>
 
 <a id="english"></a>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/🇺🇸-ENGLISH-0A66C2?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English" />
-</p>
+<details open>
+<summary align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/header/tab-dark-en.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/header/tab-light-en.svg" />
+    <img src="./assets/header/tab-dark-en.svg" alt="English" height="28" align="middle" />
+  </picture>
+</summary>
 
 <a id="about-me"></a>
 
@@ -251,3 +127,119 @@ Computer Engineering graduate from UDC (2021-2025), focused on embedded systems,
     <img src="./assets/footer/footer-dark-en.svg" alt="Footer" width="100%" />
   </picture>
 </p>
+
+</details>
+
+<a id="espanol"></a>
+
+<details>
+<summary align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/header/tab-dark-es.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/header/tab-light-es.svg" />
+    <img src="./assets/header/tab-dark-es.svg" alt="Español" height="28" align="middle" />
+  </picture>
+</summary>
+
+<a id="sobre-mi"></a>
+
+#### 𝐒𝐎𝐁𝐑𝐄 𝐌𝐈
+
+Graduado en Ingeniería Informática por la UDC (2021-2025), enfocado en sistemas embebidos, automatización y desarrollo de herramientas orientadas a ejecución real.
+
+<h4 align="center">𝐌𝐄𝐓𝐑𝐈𝐂𝐀𝐒 𝐆𝐈𝐓𝐇𝐔𝐁</h4>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/metrics/base-es.svg" />
+    <img src="./assets/metrics/base-es.svg" alt="GitHub metrics base" />
+  </picture>
+</p>
+
+#### 𝐏𝐑𝐎𝐘𝐄𝐂𝐓𝐎 𝐒𝐄𝐌𝐀𝐍𝐀𝐋
+
+<p align="center">
+  <a href="https://github.com/yeraylois/zephyr">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/spotlight/current-dark-es.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="./assets/spotlight/current-light-es.svg" />
+      <img src="./assets/spotlight/current-dark-es.svg" alt="Proyecto semanal destacado" width="100%" />
+    </picture>
+  </a>
+</p>
+
+#### 𝐒𝐍𝐀𝐊𝐄 𝐃𝐄 𝐂𝐎𝐍𝐓𝐑𝐈𝐁𝐔𝐂𝐈𝐎𝐍𝐄𝐒
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yeraylois/yeraylois/output/github-contribution-grid-snake-dark-es.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yeraylois/yeraylois/output/github-contribution-grid-snake-es.svg" />
+  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/yeraylois/yeraylois/output/github-contribution-grid-snake-es.svg" width="100%" />
+</picture>
+
+#### 𝐒𝐓𝐀𝐂𝐊 𝐓𝐄𝐂𝐍𝐎𝐋𝐎𝐆𝐈𝐂𝐎
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/stack/stack-dark-es.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/stack/stack-light-es.svg" />
+    <img src="./assets/stack/stack-dark-es.svg" alt="Stack tecnológico" width="100%" />
+  </picture>
+</p>
+
+#### 𝐏𝐑𝐎𝐘𝐄𝐂𝐓𝐎𝐒 𝐃𝐄𝐒𝐓𝐀𝐂𝐀𝐃𝐎𝐒
+
+<p align="center">
+  <a href="https://github.com/yeraylois/zephyr">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/project-zephyr_t114-dark-es.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/project-zephyr_t114-light-es.svg" />
+      <img src="./assets/cards/project-zephyr_t114-dark-es.svg" alt="Zephyr T114" width="100%" />
+    </picture>
+  </a>
+  <br/>
+  <a href="https://github.com/zephyrproject-rtos/zephyr/pull/108610">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/project-zephyr_lvgl_upstream-dark-es.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/project-zephyr_lvgl_upstream-light-es.svg" />
+      <img src="./assets/cards/project-zephyr_lvgl_upstream-dark-es.svg" alt="LVGL RGB565X Swap (Zephyr)" width="100%" />
+    </picture>
+  </a>
+</p>
+
+#### 𝐂𝐎𝐍𝐓𝐀𝐂𝐓𝐎
+
+<p align="center">
+  <a href="mailto:yerayloissanchez@gmail.com">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/contact-email-dark-es.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/contact-email-light-es.svg" />
+      <img src="./assets/cards/contact-email-dark-es.svg" alt="Email" width="100%" />
+    </picture>
+  </a>
+  <br/>
+  <a href="https://www.linkedin.com/in/yeray-lois">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/contact-linkedin-dark-es.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/contact-linkedin-light-es.svg" />
+      <img src="./assets/cards/contact-linkedin-dark-es.svg" alt="LinkedIn" width="100%" />
+    </picture>
+  </a>
+  <br/>
+  <a href="https://github.com/yeraylois">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/contact-github-dark-es.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="./assets/cards/contact-github-light-es.svg" />
+      <img src="./assets/cards/contact-github-dark-es.svg" alt="GitHub" width="100%" />
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/footer/footer-dark-es.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/footer/footer-light-es.svg" />
+    <img src="./assets/footer/footer-dark-es.svg" alt="Footer" width="100%" />
+  </picture>
+</p>
+
+</details>
