@@ -25,6 +25,8 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg?color_snake=%2336BCF7&color_dots=%23ebedf0,%23b6e3ff,%2354aeff,%230969da,%230a3069
             dist/github-contribution-grid-snake-dark.svg?color_snake=%239BE9A8&color_dots=%23161b22,%230e4429,%23006d32,%2326a641,%2339d353
+            dist/github-contribution-grid-snake-es.svg?color_snake=%23D97757&color_dots=%23ebedf0,%23f7d9cc,%23eda98c,%23d97757,%238f3f26
+            dist/github-contribution-grid-snake-dark-es.svg?color_snake=%23D97757&color_dots=%23161b22,%234a2419,%237d3a24,%23b85a3c,%23e8896a
         env:
           GITHUB_TOKEN: ${{ github.token }}
 
