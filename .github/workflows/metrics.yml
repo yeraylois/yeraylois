@@ -25,13 +25,27 @@ concurrency:
 jobs:
   metrics:
     runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        include:
+          - filename: assets/metrics/base.svg
+            css: ""
+          - filename: assets/metrics/base-es.svg
+            css: >-
+              h1,h2,h3,.activity .issue{color:#d97757!important}
+              path[fill="#9be9a8"]{fill:#f7d9cc!important}
+              path[fill="#40c463"]{fill:#eda98c!important}
+              path[fill="#30a14e"]{fill:#d97757!important}
+              path[fill="#216e39"]{fill:#8f3f26!important}
     steps:
       - name: Generate metrics card
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN != '' && secrets.METRICS_TOKEN || github.token }}
           user: yeraylois
-          filename: assets/metrics/base.svg
+          filename: ${{ matrix.filename }}
+          extras_css: ${{ matrix.css }}
           committer_branch: main
           committer_message: "chore(metrics): refresh profile metrics [skip ci]"
           base: header, activity, community, repositories, metadata
