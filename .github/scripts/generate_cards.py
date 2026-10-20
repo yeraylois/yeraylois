@@ -13,7 +13,7 @@ DATA_DIR = ROOT / ".github" / "cards"
 OUTPUT_DIR = ROOT / "assets" / "cards"
 
 WIDTH = 840
-PROJECT_HEIGHT = 92
+PROJECT_HEIGHT = 68
 CONTACT_HEIGHT = 52
 
 THEMES = {
@@ -82,17 +82,17 @@ def build_project_row(project: dict, theme_name: str, lang: str, index: int) -> 
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{PROJECT_HEIGHT}" viewBox="0 0 {WIDTH} {PROJECT_HEIGHT}" role="img" aria-label="{aria}">
   <style>
-    .sans {{ font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
-    .mono {{ font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }}
+    .sans {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }}
+    .mono {{ font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }}
   </style>
   <line x1="0" y1="1" x2="{WIDTH}" y2="1" stroke="{theme['line']}"/>
   <line x1="0" y1="1" x2="48" y2="1" stroke="{accent}" stroke-width="2"/>
-  <text class="mono" x="0" y="36" fill="{theme['quiet']}" font-size="11" letter-spacing="1.2">{number}</text>
-  <text class="sans" x="54" y="36" fill="{theme['text']}" font-size="21" font-weight="650">{title}</text>
-  <text class="sans" x="54" y="65" fill="{theme['muted']}" font-size="13">{description}</text>
-  <text class="mono" x="790" y="30" fill="{theme['muted']}" font-size="9.5" text-anchor="end" letter-spacing="0.65">{stack}</text>
-  <text class="mono" x="790" y="64" fill="{theme['quiet']}" font-size="9" text-anchor="end" letter-spacing="0.9">{action}</text>
-  <text class="sans" x="840" y="65" fill="{accent}" font-size="19" text-anchor="end">↗</text>
+  <text class="mono" x="0" y="30" fill="{theme['quiet']}" font-size="10" letter-spacing="1">{number}</text>
+  <text class="sans" x="54" y="30" fill="{theme['text']}" font-size="14" font-weight="650">{title}</text>
+  <text class="sans" x="54" y="50" fill="{theme['muted']}" font-size="12">{description}</text>
+  <text class="mono" x="790" y="29" fill="{theme['muted']}" font-size="9" text-anchor="end" letter-spacing="0.8">{stack}</text>
+  <text class="mono" x="790" y="50" fill="{theme['quiet']}" font-size="9" text-anchor="end" letter-spacing="0.8">{action}</text>
+  <text class="sans" x="840" y="51" fill="{accent}" font-size="16" text-anchor="end">↗</text>
 </svg>
 """
 
@@ -109,17 +109,17 @@ def build_contact_row(contact: dict, theme_name: str, lang: str, index: int) -> 
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{CONTACT_HEIGHT}" viewBox="0 0 {WIDTH} {CONTACT_HEIGHT}" role="img" aria-label="{aria}">
   <style>
-    .sans {{ font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
-    .mono {{ font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }}
+    .sans {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }}
+    .mono {{ font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }}
   </style>
   <line x1="0" y1="1" x2="{WIDTH}" y2="1" stroke="{theme['line']}"/>
   <line x1="0" y1="1" x2="28" y2="1" stroke="{accent}" stroke-width="2"/>
-  <text class="mono" x="0" y="34" fill="{theme['quiet']}" font-size="10" letter-spacing="1">{number}</text>
-  <circle cx="43" cy="30" r="3.5" fill="{accent}"/>
-  <text class="sans" x="58" y="34" fill="{theme['text']}" font-size="13.5" font-weight="650">{channel}</text>
-  <text class="mono" x="178" y="34" fill="{theme['muted']}" font-size="11.5">{handle}</text>
-  <text class="mono" x="790" y="34" fill="{theme['quiet']}" font-size="9.5" text-anchor="end" letter-spacing="0.65">{purpose}</text>
-  <text class="sans" x="840" y="35" fill="{accent}" font-size="18" text-anchor="end">↗</text>
+  <text class="mono" x="0" y="32" fill="{theme['quiet']}" font-size="10" letter-spacing="1">{number}</text>
+  <circle cx="43" cy="28" r="3.5" fill="{accent}"/>
+  <text class="sans" x="58" y="32" fill="{theme['text']}" font-size="14" font-weight="650">{channel}</text>
+  <text class="mono" x="178" y="32" fill="{theme['muted']}" font-size="12">{handle}</text>
+  <text class="mono" x="790" y="31" fill="{theme['quiet']}" font-size="9" text-anchor="end" letter-spacing="0.8">{purpose}</text>
+  <text class="sans" x="840" y="33" fill="{accent}" font-size="16" text-anchor="end">↗</text>
 </svg>
 """
 

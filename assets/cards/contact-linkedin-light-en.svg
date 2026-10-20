@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="52" viewBox="0 0 840 52" role="img" aria-label="LinkedIn: Yeray Lois Sánchez — Networking and jobs">
   <style>
-    .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
   </style>
   <line x1="0" y1="1" x2="840" y2="1" stroke="#d8dee4"/>
   <line x1="0" y1="1" x2="28" y2="1" stroke="#0a66c2" stroke-width="2"/>
-  <text class="mono" x="0" y="34" fill="#8c959f" font-size="10" letter-spacing="1">02</text>
-  <circle cx="43" cy="30" r="3.5" fill="#0a66c2"/>
-  <text class="sans" x="58" y="34" fill="#1f2328" font-size="13.5" font-weight="650">LinkedIn</text>
-  <text class="mono" x="178" y="34" fill="#59636e" font-size="11.5">Yeray Lois Sánchez</text>
-  <text class="mono" x="790" y="34" fill="#8c959f" font-size="9.5" text-anchor="end" letter-spacing="0.65">NETWORKING AND JOBS</text>
-  <text class="sans" x="840" y="35" fill="#0a66c2" font-size="18" text-anchor="end">↗</text>
+  <text class="mono" x="0" y="32" fill="#8c959f" font-size="10" letter-spacing="1">02</text>
+  <circle cx="43" cy="28" r="3.5" fill="#0a66c2"/>
+  <text class="sans" x="58" y="32" fill="#1f2328" font-size="14" font-weight="650">LinkedIn</text>
+  <text class="mono" x="178" y="32" fill="#59636e" font-size="12">Yeray Lois Sánchez</text>
+  <text class="mono" x="790" y="31" fill="#8c959f" font-size="9" text-anchor="end" letter-spacing="0.8">NETWORKING AND JOBS</text>
+  <text class="sans" x="840" y="33" fill="#0a66c2" font-size="16" text-anchor="end">↗</text>
 </svg>

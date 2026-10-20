@@ -67,7 +67,7 @@ class StackIconTests(unittest.TestCase):
         self.assertNotIn("<rect", svg)
         self.assertNotIn("rx=", svg)
         self.assertNotIn("<animate", svg)
-        self.assertIn("EN USO", svg)
+        self.assertIn("ACTUAL", svg)
         self.assertIn("BASE", svg)
 
 

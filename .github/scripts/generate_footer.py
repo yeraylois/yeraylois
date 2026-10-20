@@ -87,10 +87,10 @@ def build_footer(theme: str) -> str:
   {left_line}
   {right_line}
   {animated_wave}
-  <text x="{WIDTH // 2}" y="72" fill="{t['text1']}" font-size="11.5" font-weight="500" font-family="{FONT}" text-anchor="middle">
+  <text x="{WIDTH // 2}" y="72" fill="{t['text1']}" font-size="12" font-weight="500" font-family="{FONT}" text-anchor="middle">
     Built with precision by Yeray Lois Sanchez
   </text>
-  <text x="{WIDTH // 2}" y="88" fill="{t['text1']}" font-size="10" font-family="{FONT_MONO}" text-anchor="middle" opacity="0.7">
+  <text x="{WIDTH // 2}" y="88" fill="{t['text1']}" font-size="9" font-family="{FONT_MONO}" text-anchor="middle" opacity="0.7">
     <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
     Thanks for visiting
   </text>

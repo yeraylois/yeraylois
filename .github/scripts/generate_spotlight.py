@@ -16,7 +16,7 @@ OUTPUT_DIR = ROOT / "assets" / "spotlight"
 META_FILE = ROOT / ".github" / "spotlight" / "current.json"
 
 WIDTH = 840
-HEIGHT = 150
+HEIGHT = 118
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 FONT_MONO = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace"
 
@@ -87,10 +87,10 @@ def tech_signature(tech_items: list[dict], text_fill: str) -> str:
     for item in tech_items:
         label = html.escape(item.get("label", "").upper())
         color = TECH_COLORS.get(item.get("id", "").lower(), "#8b949e")
-        parts.append(f'<line x1="{x}" y1="132" x2="{x + 12}" y2="132" stroke="{color}" stroke-width="2"/>')
+        parts.append(f'<line x1="{x}" y1="100" x2="{x + 12}" y2="100" stroke="{color}" stroke-width="2"/>')
         parts.append(
-            f'<text x="{x + 18}" y="135" fill="{text_fill}" font-size="9" '
-            f'font-family="{FONT_MONO}" letter-spacing="0.55">{label}</text>'
+            f'<text x="{x + 18}" y="103" fill="{text_fill}" font-size="9" '
+            f'font-family="{FONT_MONO}" letter-spacing="0.8">{label}</text>'
         )
         x += 34 + max(34, int(len(item.get("label", "")) * 6.2))
     return "".join(parts)
@@ -106,13 +106,12 @@ def build_svg(project: dict, week: int, theme: str, lang: str) -> str:
     tech_items = project.get("tech") if isinstance(project.get("tech"), list) else []
     accent = TECH_COLORS.get(tech_items[0].get("id", "").lower(), "#58a6ff") if tech_items else "#58a6ff"
 
-    title_size = 22 if len(raw_name) > 38 else 25
     pick_label = "SELECCIÓN ACTUAL" if lang == "es" else "CURRENT PICK"
     action = "ABRIR REPOSITORIO" if lang == "es" else "OPEN REPOSITORY"
     aria_prefix = "Proyecto semanal" if lang == "es" else "Weekly project"
     description_svg = "".join(
-        f'<text x="132" y="{83 + index * 18}" fill="{colors["text2"]}" '
-        f'font-size="13" font-family="{FONT}">{line}</text>'
+        f'<text x="132" y="{58 + index * 17}" fill="{colors["text2"]}" '
+        f'font-size="12" font-family="{FONT}">{line}</text>'
         for index, line in enumerate(descriptions)
     )
     technologies = tech_signature(tech_items, colors["text2"])
@@ -120,17 +119,17 @@ def build_svg(project: dict, week: int, theme: str, lang: str) -> str:
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-label="{aria_prefix}: {name}">
   <line x1="0" y1="1" x2="{WIDTH}" y2="1" stroke="{colors['line']}"/>
   <line x1="0" y1="1" x2="64" y2="1" stroke="{accent}" stroke-width="2"/>
-  <line x1="102" y1="20" x2="102" y2="132" stroke="{colors['line']}"/>
+  <line x1="102" y1="20" x2="102" y2="100" stroke="{colors['line']}"/>
 
-  <text x="0" y="48" fill="{colors['text1']}" font-size="25" font-family="{FONT_MONO}" font-weight="650">W{week:02d}</text>
-  <text x="0" y="69" fill="{colors['quiet']}" font-size="8" font-family="{FONT_MONO}" letter-spacing="0.8">{pick_label}</text>
+  <text x="0" y="34" fill="{colors['text1']}" font-size="14" font-family="{FONT_MONO}" font-weight="650">W{week:02d}</text>
+  <text x="0" y="52" fill="{colors['quiet']}" font-size="9" font-family="{FONT_MONO}" letter-spacing="0.8">{pick_label}</text>
 
-  <text x="132" y="49" fill="{colors['text1']}" font-size="{title_size}" font-family="{FONT}" font-weight="650">{name}</text>
-  <text x="{WIDTH}" y="24" fill="{colors['quiet']}" font-size="9.5" font-family="{FONT_MONO}" text-anchor="end" letter-spacing="0.35">{repo}</text>
+  <text x="132" y="34" fill="{colors['text1']}" font-size="14" font-family="{FONT}" font-weight="650">{name}</text>
+  <text x="{WIDTH}" y="33" fill="{colors['quiet']}" font-size="9" font-family="{FONT_MONO}" text-anchor="end" letter-spacing="0.8">{repo}</text>
   {description_svg}
   {technologies}
-  <text x="{WIDTH - 24}" y="135" fill="{colors['quiet']}" font-size="8.5" font-family="{FONT_MONO}" text-anchor="end" letter-spacing="0.75">{action}</text>
-  <text x="{WIDTH}" y="138" fill="{accent}" font-size="18" font-family="{FONT}" text-anchor="end">↗</text>
+  <text x="{WIDTH - 24}" y="103" fill="{colors['quiet']}" font-size="9" font-family="{FONT_MONO}" text-anchor="end" letter-spacing="0.8">{action}</text>
+  <text x="{WIDTH}" y="105" fill="{accent}" font-size="16" font-family="{FONT}" text-anchor="end">↗</text>
 </svg>
 """
 

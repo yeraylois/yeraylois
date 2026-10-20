@@ -28,6 +28,7 @@ HEIGHT = 128
 ICON_SIZE = 26
 
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+FONT_MONO = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace"
 PROJECT = "YERAYLOIS GITHUB PROFILE"
 AUTHOR = "Yeray Lois Sanchez"
 EMAIL = "yerayloissanchez@gmail.com"
@@ -246,12 +247,12 @@ def build_ledger_items(
         item_x = int(start_x + index * slot_width)
         icon = build_icon_element(tech, item_x, row_y + 17, ICON_SIZE, icons_map)
         label = html.escape(tech.upper())
-        font_size = "8.5" if len(tech) > 10 else "9.5"
+        font_size = "8.5" if len(tech) > 12 else "9"
         parts.append(
             f'<g>{icon}'
             f'<text x="{item_x + 34}" y="{row_y + 35}" fill="currentColor" '
-            f'font-size="{font_size}" font-family="{FONT}" font-weight="600" '
-            f'letter-spacing="0.55">{label}</text></g>'
+            f'font-size="{font_size}" font-family="{FONT_MONO}" '
+            f'letter-spacing="0.8">{label}</text></g>'
         )
     return "".join(parts)
 
@@ -272,18 +273,18 @@ def build_ledger_row(
         f'<g color="{t["text2"]}">'
         f'<line x1="0" y1="{row_y + 1}" x2="{WIDTH}" y2="{row_y + 1}" stroke="{t["border"]}"/>'
         f'<line x1="0" y1="{row_y + 1}" x2="48" y2="{row_y + 1}" stroke="{t["accent"]}" stroke-width="2"/>'
-        f'<text x="0" y="{row_y + 36}" fill="{t["text2"]}" font-size="10" '
-        f'font-family="{FONT}" letter-spacing="1.1">{number}</text>'
+        f'<text x="0" y="{row_y + 30}" fill="{t["text2"]}" font-size="10" '
+        f'font-family="{FONT_MONO}" letter-spacing="1">{number}</text>'
         f'<text x="42" y="{row_y + 30}" fill="{t["text1"]}" font-size="14" '
         f'font-family="{FONT}" font-weight="650">{html.escape(label)}</text>'
-        f'<text x="42" y="{row_y + 47}" fill="{t["text2"]}" font-size="8" '
-        f'font-family="{FONT}" letter-spacing="0.8">{html.escape(note)}</text>'
+        f'<text x="42" y="{row_y + 46}" fill="{t["text2"]}" font-size="9" '
+        f'font-family="{FONT_MONO}" letter-spacing="0.8">{html.escape(note)}</text>'
         f'{items}</g>'
     )
 
 
 def build_svg(recent: list[str], loved: list[str], icons_map: dict[str, str], theme: str, lang: str = "es") -> str:
-    recent_label = "EN USO" if lang == "es" else "IN USE"
+    recent_label = "ACTUAL" if lang == "es" else "CURRENT"
     recent_note = "ACTIVIDAD RECIENTE" if lang == "es" else "RECENT ACTIVITY"
     loved_label = "BASE" if lang == "es" else "CORE"
     loved_note = "SIEMPRE A MANO" if lang == "es" else "ALWAYS CLOSE"
