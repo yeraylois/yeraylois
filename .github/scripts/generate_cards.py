@@ -15,6 +15,7 @@ OUTPUT_DIR = ROOT / "assets" / "cards"
 WIDTH = 840
 PROJECT_HEIGHT = 68
 CONTACT_HEIGHT = 52
+ACCENTS = {("es", "dark"): "#d97757", ("es", "light"): "#d97757", ("en", "dark"): "#9be9a8", ("en", "light"): "#5c6bc0"}
 
 THEMES = {
     "dark": {
@@ -29,16 +30,6 @@ THEMES = {
         "line": "#d8dee4",
         "quiet": "#8c959f",
     },
-}
-
-TECH_COLORS = {
-    "ansible": "#ee0000",
-    "angular": "#dd0031",
-    "c": "#5c6bc0",
-    "docker": "#2496ed",
-    "githubactions": "#2088ff",
-    "python": "#3776ab",
-    "zephyr": "#7f4bc4",
 }
 
 CONTACT_COLORS = {
@@ -57,13 +48,6 @@ def esc(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
-def project_accent(project: dict) -> str:
-    technologies = project.get("tech", [])
-    if not technologies:
-        return "#58a6ff"
-    return TECH_COLORS.get(technologies[0].get("id", ""), "#58a6ff")
-
-
 def project_stack(project: dict) -> str:
     labels = [item.get("label", "") for item in project.get("tech", [])]
     return " / ".join(label.upper() for label in labels if label)
@@ -75,7 +59,7 @@ def build_project_row(project: dict, theme_name: str, lang: str, index: int) -> 
     raw_description = project[f"description_{lang}"]
     description = esc(raw_description)
     stack = esc(project_stack(project))
-    accent = project_accent(project)
+    accent = ACCENTS[(lang, theme_name)]
     number = f"{index:02d}"
     action = "VER REPOSITORIO" if lang == "es" else "VIEW REPOSITORY"
     aria = esc(f"Project {number}: {project['name']} — {raw_description}")

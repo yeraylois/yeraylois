@@ -246,8 +246,8 @@ Computer Engineering graduate from UDC (2021-2025), focused on embedded systems,
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/footer/footer-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/footer/footer-light.svg" />
-    <img src="./assets/footer/footer-dark.svg" alt="Footer" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/footer/footer-dark-en.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/footer/footer-light-en.svg" />
+    <img src="./assets/footer/footer-dark-en.svg" alt="Footer" width="100%" />
   </picture>
 </p>

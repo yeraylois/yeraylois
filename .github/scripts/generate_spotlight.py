@@ -17,6 +17,7 @@ META_FILE = ROOT / ".github" / "spotlight" / "current.json"
 
 WIDTH = 840
 HEIGHT = 118
+ACCENTS = {("es", "dark"): "#d97757", ("es", "light"): "#d97757", ("en", "dark"): "#9be9a8", ("en", "light"): "#5c6bc0"}
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 FONT_MONO = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace"
 
@@ -104,7 +105,7 @@ def build_svg(project: dict, week: int, theme: str, lang: str) -> str:
     descriptions = [html.escape(line) for line in wrap_text(raw_description)]
     repo = html.escape(short_repo(project.get("repo", "")))
     tech_items = project.get("tech") if isinstance(project.get("tech"), list) else []
-    accent = TECH_COLORS.get(tech_items[0].get("id", "").lower(), "#58a6ff") if tech_items else "#58a6ff"
+    accent = ACCENTS[(lang, theme)]
 
     pick_label = "SELECCIÓN ACTUAL" if lang == "es" else "CURRENT PICK"
     action = "ABRIR REPOSITORIO" if lang == "es" else "OPEN REPOSITORY"

@@ -18,6 +18,7 @@ OUTPUT_DIR = ROOT / "assets" / "footer"
 
 WIDTH = 840
 HEIGHT = 100
+ACCENTS = {("es", "dark"): "#d97757", ("es", "light"): "#d97757", ("en", "dark"): "#9be9a8", ("en", "light"): "#5c6bc0"}
 
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
 FONT_MONO = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace"
@@ -26,20 +27,19 @@ THEMES = {
     "dark": {
         "bg": "#0d1117",
         "line": "#9be9a8",
-        "pulse": "#9be9a8",
         "text1": "#7d8590",
     },
     "light": {
         "bg": "#ffffff",
         "line": "#36BCF7",
-        "pulse": "#36BCF7",
         "text1": "#656d76",
     },
 }
 
 
-def build_footer(theme: str) -> str:
+def build_footer(theme: str, lang: str) -> str:
     t = THEMES[theme]
+    pulse = ACCENTS[(lang, theme)]
 
     # SMOOTH WAVE PATH (SINUSOIDAL ON CENTER 40%-60%)
     import math
@@ -59,7 +59,7 @@ def build_footer(theme: str) -> str:
 
     path_length = WIDTH + (wave_end - wave_start) * 2
     animated_wave = (
-        f'<path d="{wave_path}" fill="none" stroke="{t["pulse"]}" stroke-width="2.8" '
+        f'<path d="{wave_path}" fill="none" stroke="{pulse}" stroke-width="2.8" '
         f'stroke-linecap="round" stroke-linejoin="round">'
         f'<animate attributeName="stroke-dasharray" values="0 {path_length};{path_length} 0" dur="6s" repeatCount="indefinite"/>'
         f'<animate attributeName="stroke-dashoffset" values="{path_length};0" dur="6s" repeatCount="indefinite"/>'
@@ -102,9 +102,9 @@ def generate_all() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     for theme in ("dark", "light"):
-        svg = build_footer(theme)
-        out = OUTPUT_DIR / f"footer-{theme}.svg"
-        out.write_text(svg, encoding="utf-8")
+        for lang in ("es", "en"):
+            svg = build_footer(theme, lang)
+            (OUTPUT_DIR / f"footer-{theme}-{lang}.svg").write_text(svg, encoding="utf-8")
 
     print(f"Generated footers in {OUTPUT_DIR}")
 

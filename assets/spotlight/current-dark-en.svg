@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="118" viewBox="0 0 840 118" role="img" aria-label="Weekly project: Zephyr: Heltec Mesh Node T114 Board &amp; Validator">
   <line x1="0" y1="1" x2="840" y2="1" stroke="#30363d"/>
-  <line x1="0" y1="1" x2="64" y2="1" stroke="#5c6bc0" stroke-width="2"/>
+  <line x1="0" y1="1" x2="64" y2="1" stroke="#9be9a8" stroke-width="2"/>
   <line x1="102" y1="20" x2="102" y2="100" stroke="#30363d"/>
 
   <text x="0" y="34" fill="#f0f6fc" font-size="14" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-weight="650">W43</text>
@@ -11,5 +11,5 @@
   <text x="132" y="58" fill="#8b949e" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">Board support PR for Heltec Mesh Node T114 with interactive validator sample testing display,</text><text x="132" y="75" fill="#8b949e" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">buttons and hardware.</text>
   <line x1="132" y1="100" x2="144" y2="100" stroke="#5c6bc0" stroke-width="2"/><text x="150" y="103" fill="#8b949e" font-size="9" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" letter-spacing="0.8">C</text><line x1="200" y1="100" x2="212" y2="100" stroke="#7f4bc4" stroke-width="2"/><text x="218" y="103" fill="#8b949e" font-size="9" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" letter-spacing="0.8">ZEPHYR RTOS</text><line x1="302" y1="100" x2="314" y2="100" stroke="#f5822a" stroke-width="2"/><text x="320" y="103" fill="#8b949e" font-size="9" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" letter-spacing="0.8">EMBEDDED SYSTEMS</text>
   <text x="816" y="103" fill="#6e7681" font-size="9" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" text-anchor="end" letter-spacing="0.8">OPEN REPOSITORY</text>
-  <text x="840" y="105" fill="#5c6bc0" font-size="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" text-anchor="end">↗</text>
+  <text x="840" y="105" fill="#9be9a8" font-size="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" text-anchor="end">↗</text>
 </svg>

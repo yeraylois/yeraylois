@@ -4,11 +4,11 @@
     .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
   </style>
   <line x1="0" y1="1" x2="840" y2="1" stroke="#d8dee4"/>
-  <line x1="0" y1="1" x2="48" y2="1" stroke="#5c6bc0" stroke-width="2"/>
+  <line x1="0" y1="1" x2="48" y2="1" stroke="#d97757" stroke-width="2"/>
   <text class="mono" x="0" y="30" fill="#8c959f" font-size="10" letter-spacing="1">02</text>
   <text class="sans" x="54" y="30" fill="#1f2328" font-size="14" font-weight="650">LVGL RGB565X Swap (Zephyr)</text>
   <text class="sans" x="54" y="50" fill="#59636e" font-size="12">Contribución mergeada en Zephyr upstream</text>
   <text class="mono" x="790" y="29" fill="#59636e" font-size="9" text-anchor="end" letter-spacing="0.8">C / ZEPHYR RTOS</text>
   <text class="mono" x="790" y="50" fill="#8c959f" font-size="9" text-anchor="end" letter-spacing="0.8">VER REPOSITORIO</text>
-  <text class="sans" x="840" y="51" fill="#5c6bc0" font-size="16" text-anchor="end">↗</text>
+  <text class="sans" x="840" y="51" fill="#d97757" font-size="16" text-anchor="end">↗</text>
 </svg>

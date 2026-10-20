@@ -25,6 +25,7 @@ STACK_DATA = ROOT / "assets" / "stack" / "recent.json"
 
 WIDTH = 840
 HEIGHT = 128
+ACCENTS = {("es", "dark"): "#d97757", ("es", "light"): "#d97757", ("en", "dark"): "#9be9a8", ("en", "light"): "#5c6bc0"}
 ICON_SIZE = 26
 
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
@@ -40,14 +41,12 @@ THEMES = {
         "text1": "#e6edf3",
         "text2": "#7d8590",
         "border": "#30363d",
-        "accent": "#9be9a8",
     },
     "light": {
         "bg": "#ffffff",
         "text1": "#1f2328",
         "text2": "#656d76",
         "border": "#d1d9e0",
-        "accent": "#36BCF7",
     },
 }
 
@@ -264,6 +263,7 @@ def build_ledger_row(
     techs: list[str],
     icons_map: dict[str, str],
     theme: str,
+    accent: str,
     row_y: int,
     start_x: int,
 ) -> str:
@@ -272,7 +272,7 @@ def build_ledger_row(
     return (
         f'<g color="{t["text2"]}">'
         f'<line x1="0" y1="{row_y + 1}" x2="{WIDTH}" y2="{row_y + 1}" stroke="{t["border"]}"/>'
-        f'<line x1="0" y1="{row_y + 1}" x2="48" y2="{row_y + 1}" stroke="{t["accent"]}" stroke-width="2"/>'
+        f'<line x1="0" y1="{row_y + 1}" x2="48" y2="{row_y + 1}" stroke="{accent}" stroke-width="2"/>'
         f'<text x="0" y="{row_y + 30}" fill="{t["text2"]}" font-size="10" '
         f'font-family="{FONT_MONO}" letter-spacing="1">{number}</text>'
         f'<text x="42" y="{row_y + 30}" fill="{t["text1"]}" font-size="14" '
@@ -292,10 +292,10 @@ def build_svg(recent: list[str], loved: list[str], icons_map: dict[str, str], th
     purpose = f"TECH STACK SVG ({theme.upper()}/{lang.upper()})"
     banner = build_svg_banner(rel_path, purpose)
     recent_row = build_ledger_row(
-        "01", recent_label, recent_note, recent, icons_map, theme, 0, 205
+        "01", recent_label, recent_note, recent, icons_map, theme, ACCENTS[(lang, theme)], 0, 205
     )
     loved_row = build_ledger_row(
-        "02", loved_label, loved_note, loved, icons_map, theme, 64, 520
+        "02", loved_label, loved_note, loved, icons_map, theme, ACCENTS[(lang, theme)], 64, 520
     )
 
     return banner + f"""<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-label="Tech Stack">
