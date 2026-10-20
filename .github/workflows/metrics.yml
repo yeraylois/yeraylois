@@ -30,14 +30,25 @@ jobs:
       matrix:
         include:
           - filename: assets/metrics/base.svg
-            css: ""
+            css: >-
+              h1,h2,h3,.activity .issue{color:#5c6bc0!important}
+              [fill="#9be9a8"]{fill:#b6e3ff!important}
+              [fill="#40c463"]{fill:#54aeff!important}
+              [fill="#30a14e"]{fill:#0969da!important}
+              [fill="#216e39"]{fill:#0a3069!important}
+              @media (prefers-color-scheme: dark){
+              h1,h2,h3,.activity .issue{color:#9be9a8!important}
+              [fill="#9be9a8"]{fill:#9be9a8!important}
+              [fill="#40c463"]{fill:#40c463!important}
+              [fill="#30a14e"]{fill:#30a14e!important}
+              [fill="#216e39"]{fill:#216e39!important}}
           - filename: assets/metrics/base-es.svg
             css: >-
               h1,h2,h3,.activity .issue{color:#d97757!important}
-              path[fill="#9be9a8"]{fill:#f7d9cc!important}
-              path[fill="#40c463"]{fill:#eda98c!important}
-              path[fill="#30a14e"]{fill:#d97757!important}
-              path[fill="#216e39"]{fill:#8f3f26!important}
+              [fill="#9be9a8"]{fill:#f7d9cc!important}
+              [fill="#40c463"]{fill:#eda98c!important}
+              [fill="#30a14e"]{fill:#d97757!important}
+              [fill="#216e39"]{fill:#8f3f26!important}
     steps:
       - name: Generate metrics card
         uses: lowlighter/metrics@latest
