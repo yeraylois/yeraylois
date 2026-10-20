@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Tests for repository scope, filters, and recency ordering."""
 
+import io
 import unittest
+import urllib.error
 from unittest.mock import patch
 
 import update_stack
@@ -66,6 +67,7 @@ class RepositoryFilterTests(unittest.TestCase):
     def test_missing_private_token_uses_public_owner_endpoint(self) -> None:
         with (
             patch.object(update_stack, "STACK_TOKEN", ""),
+            patch.object(update_stack, "GITHUB_TOKEN", "workflow-token"),
             patch.object(update_stack, "api_request", return_value=[]) as request,
         ):
             update_stack.fetch_all_repos()
@@ -73,7 +75,36 @@ class RepositoryFilterTests(unittest.TestCase):
         url, token = request.call_args.args
         self.assertTrue(url.startswith("https://api.github.com/users/yeraylois/repos?"))
         self.assertIn("type=owner", url)
-        self.assertEqual("", token)
+        self.assertEqual("workflow-token", token)
+
+    def test_rejected_private_token_falls_back_to_public_repositories(self) -> None:
+        public = repo("public-project", id=1)
+
+        def response(url, token=""):
+            if url.startswith("https://api.github.com/user/repos?"):
+                raise urllib.error.HTTPError(url, 401, "Unauthorized", {}, None)
+            return [public]
+
+        with (
+            patch.object(update_stack, "STACK_TOKEN", "expired-token"),
+            patch.object(update_stack, "api_request", side_effect=response),
+            patch("sys.stderr", new_callable=io.StringIO) as stderr,
+        ):
+            repositories = update_stack.fetch_all_repos()
+
+        self.assertEqual(["public-project"], [item["name"] for item in repositories])
+        self.assertIn("STACK_REPOS_TOKEN invalido o caducado", stderr.getvalue())
+
+    def test_no_repositories_keeps_previous_stack(self) -> None:
+        with (
+            patch.object(update_stack, "load_tech_icons", return_value=({}, "")),
+            patch.object(update_stack, "fetch_all_repos", return_value=[]),
+            patch.object(update_stack, "STACK_JSON") as stack_json,
+        ):
+            with self.assertRaises(SystemExit):
+                update_stack.main()
+
+        stack_json.parent.mkdir.assert_not_called()
 
 
 class DetectionTests(unittest.TestCase):

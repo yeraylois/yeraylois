@@ -14,6 +14,7 @@ import re
 import sys
 import json
 import yaml
+import urllib.error
 import urllib.request
 import urllib.parse
 from datetime import datetime, timezone
@@ -302,14 +303,22 @@ def fetch_all_repos():
     public_repos = fetch_repo_pages(
         f"https://api.github.com/users/{USERNAME}/repos",
         {"type": "owner"},
+        GITHUB_TOKEN,
     )
     authenticated_repos = []
-    if STACK_TOKEN:
-        authenticated_repos = fetch_repo_pages(
-            "https://api.github.com/user/repos",
-            {"visibility": "all", "affiliation": "owner"},
-            STACK_TOKEN,
-        )
+    token = STACK_TOKEN
+    if token:
+        try:
+            authenticated_repos = fetch_repo_pages(
+                "https://api.github.com/user/repos",
+                {"visibility": "all", "affiliation": "owner"},
+                token,
+            )
+        except urllib.error.HTTPError as e:
+            if e.code not in (401, 403):
+                raise
+            print("STACK_REPOS_TOKEN invalido o caducado, usando solo repos publicos", file=sys.stderr)
+            token = ""
 
     merged = {}
     for repo in [*public_repos, *authenticated_repos]:
@@ -321,17 +330,16 @@ def fetch_all_repos():
     private_count = sum(repo.get("private", False) for repo in eligible)
     if private_count:
         source = "merged public/private repositories"
-    elif STACK_TOKEN:
+    elif token:
         source = "public repositories (configured token exposed no private repositories)"
     else:
-        source = "public repositories (STACK_REPOS_TOKEN is not configured)"
+        source = "public repositories (STACK_REPOS_TOKEN is missing or rejected)"
     print(f"Repository source: {source}")
     print(f"Eligible owned repositories: {len(eligible)} ({excluded} excluded)")
     return eligible
 
 
 def detect_frameworks(repo):
-    """Detect frameworks/tools from description, topics, and name."""
     text = " ".join([
         repo.get("description") or "",
         repo.get("name") or "",
@@ -396,7 +404,7 @@ def create_issue_for_new_tech(new_techs, repo_name):
     if not new_techs:
         return
     
-    body_lines = ["## 🆕 Nuevas tecnologías detectadas"]
+    body_lines = ["## Nuevas tecnologías detectadas"]
     body_lines.append("")
     body_lines.append("Las siguientes tecnologías fueron detectadas en tus repositorios pero no tienen icono mapeado en `assets/tech_icons.yml`:")
     body_lines.append("")
@@ -412,7 +420,7 @@ def create_issue_for_new_tech(new_techs, repo_name):
     body_lines.append(f"_Fecha: {datetime.now().isoformat()}_")
     
     body = "\n".join(body_lines)
-    title = f"🆕 Nueva tecnología detectada: {', '.join(new_techs)}"
+    title = f"Nueva tecnología detectada: {', '.join(new_techs)}"
     
     url = f"https://api.github.com/repos/{USERNAME}/{REPO_NAME}/issues"
     payload = json.dumps({"title": title, "body": body}).encode()
@@ -442,7 +450,12 @@ def main():
     
 
     print("\nFetching repositories...")
-    repos = fetch_all_repos()
+    try:
+        repos = fetch_all_repos()
+    except (urllib.error.URLError, TimeoutError) as e:
+        sys.exit(f"Could not fetch repositories from the GitHub API: {e}")
+    if not repos:
+        sys.exit("No eligible repositories found, keeping the previous stack")
     private_count = sum(repo.get("private", False) for repo in repos)
     public_count = len(repos) - private_count
     print(f"Found {public_count} public and {private_count} private eligible repositories")
@@ -456,10 +469,10 @@ def main():
 
     unmapped = [tech for tech, _ in recent_stack if tech not in icons_map]
     if unmapped:
-        print(f"\n⚠️  Unmapped technologies: {unmapped}")
+        print(f"\nUnmapped technologies: {unmapped}")
         create_issue_for_new_tech(unmapped, REPO_NAME)
     else:
-        print("\n✅ All technologies have icon mappings")
+        print("\nAll technologies have icon mappings")
     
 
     # STATIC LOVED STACK
@@ -479,7 +492,7 @@ def main():
         json.dump(stack_data, f, indent=2)
         f.write("\n")
 
-    print("\n✅ Stack data saved successfully!")
+    print("\nStack data saved")
     print(f"   Recent stack: {len(stack_data['recent'])} technologies")
     print(f"   Loved stack: {len(stack_data['loved'])} technologies")
 
