@@ -5,14 +5,14 @@
     "ESP32",
     "Zephyr",
     "Shell",
-    "Qt"
+    "LoRa"
   ],
   "loved": [
     "Bash",
     "C",
     "Git"
   ],
-  "updated_at": "2026-10-23T08:31:34.655519+00:00",
+  "updated_at": "2026-10-24T08:06:31.987294+00:00",
   "repository_scope": "public-private",
   "repositories_scanned": 35,
   "private_repositories_scanned": 35
