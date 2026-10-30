@@ -5,14 +5,14 @@
     "ESP32",
     "Zephyr",
     "Shell",
-    "Qt"
+    "MQTT"
   ],
   "loved": [
     "Bash",
     "C",
     "Git"
   ],
-  "updated_at": "2026-10-29T09:56:47.498282+00:00",
+  "updated_at": "2026-10-30T09:59:11.786513+00:00",
   "repository_scope": "public-private",
   "repositories_scanned": 35,
   "private_repositories_scanned": 35
