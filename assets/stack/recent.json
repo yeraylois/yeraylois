@@ -1,10 +1,10 @@
 {
   "recent": [
+    "Shell",
     "C++",
     "C",
     "ESP32",
     "Zephyr",
-    "Shell",
     "LoRa"
   ],
   "loved": [
@@ -12,8 +12,8 @@
     "C",
     "Git"
   ],
-  "updated_at": "2026-11-13T10:57:11.149222+00:00",
+  "updated_at": "2026-11-14T10:23:28.738174+00:00",
   "repository_scope": "public-private",
-  "repositories_scanned": 35,
-  "private_repositories_scanned": 35
+  "repositories_scanned": 36,
+  "private_repositories_scanned": 36
 }
