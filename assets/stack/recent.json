@@ -1,19 +1,19 @@
 {
   "recent": [
+    "MQTT",
+    "Qt",
+    "LoRa",
     "Python",
-    "C++",
-    "C",
-    "ESP32",
-    "Zephyr",
-    "Shell"
+    "MaterialUI",
+    "C++"
   ],
   "loved": [
     "Bash",
     "C",
     "Git"
   ],
-  "updated_at": "2026-11-22T11:21:24.462684+00:00",
+  "updated_at": "2026-11-23T12:34:48.080616+00:00",
   "repository_scope": "public-private",
-  "repositories_scanned": 36,
+  "repositories_scanned": 37,
   "private_repositories_scanned": 36
 }
