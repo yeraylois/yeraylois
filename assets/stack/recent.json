@@ -1,19 +1,19 @@
 {
   "recent": [
     "MaterialUI",
+    "JavaScript",
+    "MQTT",
     "Qt",
     "LoRa",
-    "MQTT",
-    "Python",
-    "C++"
+    "Python"
   ],
   "loved": [
     "Bash",
     "C",
     "Git"
   ],
-  "updated_at": "2026-11-24T13:40:25.188197+00:00",
+  "updated_at": "2026-11-25T12:51:26.200207+00:00",
   "repository_scope": "public-private",
   "repositories_scanned": 37,
-  "private_repositories_scanned": 36
+  "private_repositories_scanned": 37
 }
